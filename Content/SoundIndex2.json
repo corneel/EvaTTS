@@ -1,0 +1,210 @@
+[
+		{
+			"Name": "ThisisEva",
+			"Text": "This is Eva",
+			"PhonemeArray": [
+				{
+					"Phoneme": "DH",
+					"Duration": 0.041000001132488251
+				},
+				{
+					"Phoneme": "IH",
+					"Duration": 0.041000001132488251
+				},
+				{
+					"Phoneme": "S",
+					"Duration": 0.041000001132488251
+				},
+				{
+					"Phoneme": ".",
+					"Duration": 0.082000002264976501
+				},
+				{
+					"Phoneme": "IH",
+					"Duration": 0.041000001132488251
+				},
+				{
+					"Phoneme": "Z",
+					"Duration": 0.041000001132488251
+				},
+				{
+					"Phoneme": ".",
+					"Duration": 0.041000001132488251
+				},
+				{
+					"Phoneme": "EY",
+					"Duration": 0.083000000000000004
+				},
+				{
+					"Phoneme": "V",
+					"Duration": 0.125
+				},
+				{
+					"Phoneme": "AH",
+					"Duration": 0.125
+				},
+				{
+					"Phoneme": ".",
+					"Duration": 0.10000000000000001
+				},
+				{
+					"Phoneme": "!",
+					"Duration": 4
+				}
+			],
+			"Asset": "SoundWave'/Game/This_is_Eva.This_is_Eva'",
+			"StartDelay": 0.20000000000000001,
+			"PacingDelay": 1,
+			"EndOfSentenceDelay": 2
+		},
+		{
+			"Name": "ThisisEva2",
+			"Text": "This is Eva. I am ready to assist you.",
+			"PhonemeArray": [
+				{
+					"Phoneme": "DH",
+					"Duration": 0.082999996840953827
+				},
+				{
+					"Phoneme": "IH",
+					"Duration": 0.041000001132488251
+				},
+				{
+					"Phoneme": "S",
+					"Duration": 0.083000000000000004
+				},
+				{
+					"Phoneme": ".",
+					"Duration": 0.0099999997764825821
+				},
+				{
+					"Phoneme": "IH",
+					"Duration": 0.041000000000000002
+				},
+				{
+					"Phoneme": "Z",
+					"Duration": 0.083000000000000004
+				},
+				{
+					"Phoneme": ".",
+					"Duration": 0.041000000000000002
+				},
+				{
+					"Phoneme": "EY",
+					"Duration": 0.083000000000000004
+				},
+				{
+					"Phoneme": "V",
+					"Duration": 0.125
+				},
+				{
+					"Phoneme": "AH",
+					"Duration": 0.041000000000000002
+				},
+				{
+					"Phoneme": ".",
+					"Duration": 0.20000000000000001
+				},
+				{
+					"Phoneme": "!",
+					"Duration": 0.51000000000000001
+				},
+				{
+					"Phoneme": "AY",
+					"Duration": 0.083000000000000004
+				},
+				{
+					"Phoneme": ".",
+					"Duration": 0.0099999997764825821
+				},
+				{
+					"Phoneme": "AE",
+					"Duration": 0.083000000000000004
+				},
+				{
+					"Phoneme": "M",
+					"Duration": 0.125
+				},
+				{
+					"Phoneme": ".",
+					"Duration": 0.0099999997764825821
+				},
+				{
+					"Phoneme": "R",
+					"Duration": 0.125
+				},
+				{
+					"Phoneme": "EH",
+					"Duration": 0.041000000000000002
+				},
+				{
+					"Phoneme": "D ",
+					"Duration": 0.083000000000000004
+				},
+				{
+					"Phoneme": "IY",
+					"Duration": 0.041000000000000002
+				},
+				{
+					"Phoneme": ".",
+					"Duration": 0.001
+				},
+				{
+					"Phoneme": "T",
+					"Duration": 0.041000000000000002
+				},
+				{
+					"Phoneme": "UW",
+					"Duration": 0.041000000000000002
+				},
+				{
+					"Phoneme": ".",
+					"Duration": 0.041000000000000002
+				},
+				{
+					"Phoneme": "AH",
+					"Duration": 0.083000000000000004
+				},
+				{
+					"Phoneme": "S",
+					"Duration": 0.125
+				},
+				{
+					"Phoneme": "IH",
+					"Duration": 0.083000000000000004
+				},
+				{
+					"Phoneme": "S",
+					"Duration": 0.125
+				},
+				{
+					"Phoneme": "T",
+					"Duration": 0.083000000000000004
+				},
+				{
+					"Phoneme": ".",
+					"Duration": 0.001
+				},
+				{
+					"Phoneme": "Y",
+					"Duration": 0.083000000000000004
+				},
+				{
+					"Phoneme": "UW",
+					"Duration": 0.125
+				},
+				{
+					"Phoneme": ".",
+					"Duration": 0.041000000000000002
+				},
+				{
+					"Phoneme": "!",
+					"Duration": 0.125
+				}
+			],
+			"Asset": "SoundWave'/Game/ThisisEva-IAmReadyToAssistYou.ThisisEva-IAmReadyToAssistYou'",
+			"StartDelay": 0.90000000000000002,
+			"PacingDelay": 1,
+			"EndOfSentenceDelay": 2
+		}
+]

@@ -1,0 +1,34 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.20",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "EvaTTS",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "SoundVisualizations",
+			"Enabled": true
+		},
+		{
+			"Name": "SoundUtilities",
+			"Enabled": true
+		},
+		{
+			"Name": "PythonScriptPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "ActorSequenceEditor",
+			"Enabled": true
+		}
+	]
+}

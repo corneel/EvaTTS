@@ -1,0 +1,78 @@
+[
+	{
+		"Name": "ThisisEva",
+		"Text": "This is Eva",
+		"PhonemeArray": [
+			{
+				"Phoneme": "DH",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": ".",
+				"Duration": 0.082000002264976501
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": ".",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": "EY",
+				"Duration": 0.082999996840953827
+			},
+			{
+				"Phoneme": "V",
+				"Duration": 0.125
+			},
+			{
+				"Phoneme": "AH",
+				"Duration": 0.034999996423721313
+			},
+			{
+				"Phoneme": ".",
+				"Duration": 0.18999999761581421
+			},
+			{
+				"Phoneme": "!",
+				"Duration": 4
+			}
+		],
+		"Asset": "This_is_Eva",
+		"StartDelay": 0.20000000298023224,
+		"PacingDelay": 1,
+		"EndOfSentenceDelay": 2
+	},
+	{
+		"Name": "ThisisEva2",
+		"Text": "element2",
+		"PhonemeArray": [
+			{
+				"Phoneme": "C",
+				"Duration": 3
+			},
+			{
+				"Phoneme": "D",
+				"Duration": 4
+			}
+		],
+		"Asset": "ThisisEva-IAmReadyToAssistYou",
+		"StartDelay": 7,
+		"PacingDelay": 5,
+		"EndOfSentenceDelay": 3
+	}
+]
