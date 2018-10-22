@@ -1,0 +1,245 @@
+[
+	{
+		"Name": "You can also use time dilation controls on your left to slow down the animation.",
+		"Text": "You can also use time dilation controls on your left to slow down the animation.",
+		"PhonemeArray": [
+			{
+				"Phoneme": "_",
+				"Duration": 0.082999996840953827
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.065999999642372131
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.05000000074505806
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.063000001013278961
+			},
+			{
+				"Phoneme": "AE",
+				"Duration": 0.035999998450279236
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.079000003635883331
+			},
+			{
+				"Phoneme": "AO",
+				"Duration": 0.12999999523162842
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.075000002980232239
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.10400000214576721
+			},
+			{
+				"Phoneme": "OW",
+				"Duration": 0.090000003576278687
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.097000002861022949
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.092000000178813934
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.079999998211860657
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.079999998211860657
+			},
+			{
+				"Phoneme": "AY",
+				"Duration": 0.14399999380111694
+			},
+			{
+				"Phoneme": "M",
+				"Duration": 0.064999997615814209
+			},
+			{
+				"Phoneme": "D",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": "AY",
+				"Duration": 0.1379999965429306
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.090000003576278687
+			},
+			{
+				"Phoneme": "EY",
+				"Duration": 0.10000000149011612
+			},
+			{
+				"Phoneme": "SH",
+				"Duration": 0.10000000149011612
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.041999999433755875
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.064999997615814209
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.064999997615814209
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.037000000476837158
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.057000000029802322
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.085000000894069672
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.065999999642372131
+			},
+			{
+				"Phoneme": "OW",
+				"Duration": 0.093000002205371857
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.13600000739097595
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.087999999523162842
+			},
+			{
+				"Phoneme": "AA",
+				"Duration": 0.083999998867511749
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "AO",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.050999999046325684
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.059999998658895493
+			},
+			{
+				"Phoneme": "EH",
+				"Duration": 0.11699999868869781
+			},
+			{
+				"Phoneme": "F",
+				"Duration": 0.056000001728534698
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.050999999046325684
+			},
+			{
+				"Phoneme": "UH",
+				"Duration": 0.041999999433755875
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.12600000202655792
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.050999999046325684
+			},
+			{
+				"Phoneme": "OW",
+				"Duration": 0.14800000190734863
+			},
+			{
+				"Phoneme": "D",
+				"Duration": 0.054999999701976776
+			},
+			{
+				"Phoneme": "AW",
+				"Duration": 0.14399999380111694
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.048000000417232513
+			},
+			{
+				"Phoneme": "DH",
+				"Duration": 0.037999998778104782
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.092000000178813934
+			},
+			{
+				"Phoneme": "AE",
+				"Duration": 0.13199999928474426
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.035999998450279236
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.05000000074505806
+			},
+			{
+				"Phoneme": "M",
+				"Duration": 0.054999999701976776
+			},
+			{
+				"Phoneme": "EY",
+				"Duration": 0.11400000005960464
+			},
+			{
+				"Phoneme": "SH",
+				"Duration": 0.10599999874830246
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.082999996840953827
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.14000000059604645
+			},
+			{
+				"Phoneme": "_",
+				"Duration": 0.25099998712539673
+			}
+		],
+		"Asset": "/Content/TTS-YOU-CAN-AL10212018213647.wav"
+	}
+]

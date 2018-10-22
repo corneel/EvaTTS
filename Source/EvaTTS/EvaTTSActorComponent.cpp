@@ -410,11 +410,13 @@ bool UEvaTTSActorComponent::TTSSpeak(FString Value, bool PreparePhonemes)
 			SPFEI(SPEI_END_INPUT_STREAM) |
 			SPFEI(SPEI_VISEME);*/
 
+		TTSPhonemesIndexes.Empty();
+		TTSPhonemesDurations.Empty();
+
 		ULONGLONG event_mask = SPFEI(SPEI_PHONEME);
 
 		//ULONGLONG event_mask = SPFEI_ALL_TTS_EVENTS;
 
-		hr = pVoice->SetAlertBoundary(SPEI_PHONEME);
 		hr = pVoice->SetInterest(event_mask, event_mask);
 
 		//UEvaTTSActorComponent::pTTS = this;
@@ -423,6 +425,7 @@ bool UEvaTTSActorComponent::TTSSpeak(FString Value, bool PreparePhonemes)
 
 	}
 
+	hr = pVoice->SetAlertBoundary(SPEI_PHONEME);
 	hr = pVoice->Speak(*Value, SPEAKFLAGS::SPF_ASYNC, &stream_number_);
 
 	if (PreparePhonemes)
@@ -430,6 +433,31 @@ bool UEvaTTSActorComponent::TTSSpeak(FString Value, bool PreparePhonemes)
 		HANDLE hWait = pVoice->SpeakCompleteEvent();
 		WaitAndPumpMessagesWithTimeout(hWait, INFINITE);
 	}
+	if (FAILED(hr))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak: Speak method failed"));
+		return false;
+	}
+
+	return true;
+}
+
+bool UEvaTTSActorComponent::TTSPausibleSpeak(FString Value)
+{
+	//FString Value = "This is a long sentence to test the pause function which doesn't seemt to work.";
+	if (!TTSInit()) return false;
+
+	HRESULT hr = S_OK;
+
+	if (pVoice == NULL)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak pVoice is NULL "));
+		return false;
+	}
+
+		hr = pVoice->SetAlertBoundary(SPEI_PHONEME);
+	hr = pVoice->Speak(*Value, SPEAKFLAGS::SPF_ASYNC, &stream_number_);
+
 	if (FAILED(hr))
 	{
 		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak: Speak method failed"));
@@ -945,9 +973,9 @@ void UEvaTTSActorComponent::PrintJSONObject(TSharedPtr<FJsonObject> JSONObject, 
 //	// Package Name: /Game/Temp 
 //	// Object Path: /Game/Temp.Temp 
 //
-//  SoundWave'/Game/Eva-TTS-SpeechSynthesisIntroduction.Eva-TTS-SpeechSynthesisIntroduction'
-
-
+//	//SoundWave'/Game/Eva-TTS-SpeechSynthesisIntroduction.Eva-TTS-SpeechSynthesisIntroduction'
+//
+//
 //	FString PackagePath = "/Game";
 //	FString PackageName = PackagePath + "/" + Name;
 //	FString ObjectPath = PackageName + "." + Name;	

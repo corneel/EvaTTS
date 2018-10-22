@@ -1,0 +1,213 @@
+[
+	{
+		"Name": "you can use any Microsoft voice that is installed on your computer.",
+		"Text": "you can use any Microsoft voice that is installed on your computer.",
+		"PhonemeArray": [
+			{
+				"Phoneme": "_",
+				"Duration": 0.082999996840953827
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.065999999642372131
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.05000000074505806
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.063000001013278961
+			},
+			{
+				"Phoneme": "AE",
+				"Duration": 0.035999998450279236
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.059000000357627869
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.075000002980232239
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.093999996781349182
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.082999996840953827
+			},
+			{
+				"Phoneme": "EH",
+				"Duration": 0.10599999874830246
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.046999998390674591
+			},
+			{
+				"Phoneme": "IY",
+				"Duration": 0.090000003576278687
+			},
+			{
+				"Phoneme": "M",
+				"Duration": 0.071000002324581146
+			},
+			{
+				"Phoneme": "AY",
+				"Duration": 0.11400000005960464
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.085000000894069672
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.032000001519918442
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.035999998450279236
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.10100000351667404
+			},
+			{
+				"Phoneme": "AO",
+				"Duration": 0.13400000333786011
+			},
+			{
+				"Phoneme": "F",
+				"Duration": 0.064999997615814209
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.061999998986721039
+			},
+			{
+				"Phoneme": "V",
+				"Duration": 0.067000001668930054
+			},
+			{
+				"Phoneme": "OY",
+				"Duration": 0.18000000715255737
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.1120000034570694
+			},
+			{
+				"Phoneme": "DH",
+				"Duration": 0.050999999046325684
+			},
+			{
+				"Phoneme": "AE",
+				"Duration": 0.056000001728534698
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.041999999433755875
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.052000001072883606
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.071000002324581146
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.041999999433755875
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.059999998658895493
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.089000001549720764
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.039999999105930328
+			},
+			{
+				"Phoneme": "AO",
+				"Duration": 0.081000000238418579
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.076999999582767487
+			},
+			{
+				"Phoneme": "D",
+				"Duration": 0.057000000029802322
+			},
+			{
+				"Phoneme": "AA",
+				"Duration": 0.081000000238418579
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.052000001072883606
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.048000000417232513
+			},
+			{
+				"Phoneme": "AO",
+				"Duration": 0.041999999433755875
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.079000003635883331
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.070000000298023224
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.037000000476837158
+			},
+			{
+				"Phoneme": "M",
+				"Duration": 0.061000000685453415
+			},
+			{
+				"Phoneme": "P",
+				"Duration": 0.037000000476837158
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.079999998211860657
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.064000003039836884
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.054000001400709152
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.15000000596046448
+			},
+			{
+				"Phoneme": "_",
+				"Duration": 0.25400000810623169
+			}
+		],
+		"Asset": "/Content/TTS-YOU-CAN-US10212018213743.wav"
+	}
+]

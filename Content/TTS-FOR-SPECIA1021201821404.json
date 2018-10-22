@@ -1,0 +1,357 @@
+[
+	{
+		"Name": "For special effects, you can change the avatar skin or accompanying particle by using the controls on your top right.",
+		"Text": "For special effects, you can change the avatar skin or accompanying particle by using the controls on your top right.",
+		"PhonemeArray": [
+			{
+				"Phoneme": "_",
+				"Duration": 0.082999996840953827
+			},
+			{
+				"Phoneme": "F",
+				"Duration": 0.065999999642372131
+			},
+			{
+				"Phoneme": "AO",
+				"Duration": 0.035999998450279236
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.054000001400709152
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.098999999463558197
+			},
+			{
+				"Phoneme": "P",
+				"Duration": 0.059999998658895493
+			},
+			{
+				"Phoneme": "EH",
+				"Duration": 0.085000000894069672
+			},
+			{
+				"Phoneme": "SH",
+				"Duration": 0.10400000214576721
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.039999999105930328
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.05000000074505806
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.059000000357627869
+			},
+			{
+				"Phoneme": "F",
+				"Duration": 0.11999999731779099
+			},
+			{
+				"Phoneme": "EH",
+				"Duration": 0.16300000250339508
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.056000001728534698
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.10300000011920929
+			},
+			{
+				"Phoneme": "_",
+				"Duration": 0.23999999463558197
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.075000002980232239
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.050999999046325684
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.064999997615814209
+			},
+			{
+				"Phoneme": "AE",
+				"Duration": 0.037000000476837158
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.078000001609325409
+			},
+			{
+				"Phoneme": "CH",
+				"Duration": 0.090999998152256012
+			},
+			{
+				"Phoneme": "EY",
+				"Duration": 0.1289999932050705
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.05000000074505806
+			},
+			{
+				"Phoneme": "JH",
+				"Duration": 0.078000001609325409
+			},
+			{
+				"Phoneme": "DH",
+				"Duration": 0.050999999046325684
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.096000000834465027
+			},
+			{
+				"Phoneme": "AE",
+				"Duration": 0.14399999380111694
+			},
+			{
+				"Phoneme": "V",
+				"Duration": 0.048999998718500137
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.045000001788139343
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.045000001788139343
+			},
+			{
+				"Phoneme": "AA",
+				"Duration": 0.11500000208616257
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.064000003039836884
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.11100000143051147
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.057999998331069946
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.12999999523162842
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.10899999737739563
+			},
+			{
+				"Phoneme": "AO",
+				"Duration": 0.090000003576278687
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.071999996900558472
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.076999999582767487
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.10300000011920929
+			},
+			{
+				"Phoneme": "AH",
+				"Duration": 0.070000000298023224
+			},
+			{
+				"Phoneme": "M",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "P",
+				"Duration": 0.043000001460313797
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.043000001460313797
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.046999998390674591
+			},
+			{
+				"Phoneme": "IY",
+				"Duration": 0.086000002920627594
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.063000001013278961
+			},
+			{
+				"Phoneme": "NG",
+				"Duration": 0.063000001013278961
+			},
+			{
+				"Phoneme": "P",
+				"Duration": 0.082000002264976501
+			},
+			{
+				"Phoneme": "AA",
+				"Duration": 0.067000001668930054
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.071000002324581146
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.037999998778104782
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.052000001072883606
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.068000003695487976
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.054999999701976776
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.096000000834465027
+			},
+			{
+				"Phoneme": "B",
+				"Duration": 0.063000001013278961
+			},
+			{
+				"Phoneme": "AY",
+				"Duration": 0.12600000202655792
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.090999998152256012
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.068000003695487976
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.074000000953674316
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.054999999701976776
+			},
+			{
+				"Phoneme": "NG",
+				"Duration": 0.068999998271465302
+			},
+			{
+				"Phoneme": "DH",
+				"Duration": 0.037999998778104782
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.041999999433755875
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.079999998211860657
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.037999998778104782
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.059000000357627869
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.076999999582767487
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.063000001013278961
+			},
+			{
+				"Phoneme": "OW",
+				"Duration": 0.12999999523162842
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.13199999928474426
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.086999997496604919
+			},
+			{
+				"Phoneme": "AA",
+				"Duration": 0.092000000178813934
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.05000000074505806
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "AO",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.046999998390674591
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.12200000137090683
+			},
+			{
+				"Phoneme": "AA",
+				"Duration": 0.12399999797344208
+			},
+			{
+				"Phoneme": "P",
+				"Duration": 0.085000000894069672
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.079999998211860657
+			},
+			{
+				"Phoneme": "AY",
+				"Duration": 0.18000000715255737
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.15999999642372131
+			},
+			{
+				"Phoneme": "_",
+				"Duration": 0.25499999523162842
+			}
+		],
+		"Asset": "/Content/TTS-FOR-SPECIA1021201821404.wav"
+	}
+]

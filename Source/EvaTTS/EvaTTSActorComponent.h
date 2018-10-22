@@ -4,7 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-
+#include "Engine/AssetManager.h"
+#include "PrimaryAssetId.h"
+#include "AssetData.h"
+#include "AssetBundleData.h"
 #include "Misc/FileHelper.h"
 #include <cmath>
 
@@ -134,6 +137,9 @@ public:
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "TTSSpeak", Keywords = "Speak TTS"), Category = "TextToSpeech")
 		bool TTSSpeak(FString Value, bool PreparePhonemes = false);
 
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "TTSPausibleSpeak", Keywords = "Speak Pausible Speak TTS"), Category = "TextToSpeech")
+		bool TTSPausibleSpeak(FString Value);
+
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "TTSSpeakFile", Keywords = "Speak TTS File Stream"), Category = "TextToSpeech")
 		bool TTSSpeakStream(FString Value);
 
@@ -142,9 +148,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "TTSGetEvents", Keywords = "Get Events TTS"), Category = "TextToSpeech")
 		bool TTSGetEvents(TArray<int>& TTSPhonemesIndexes, TArray<int>& TTSPhonemesDurations);
-
-	//UFUNCTION(BlueprintCallable, meta = (DisplayName = "TTSGenerateColors", Keywords = "Generate Colors"), Category = "TextToSpeech")
-	//	static bool GenerateColors(TArray<FLinearColor>& ColorArray, int Elements, int Skip = 1);
 
 	/**************************************JSON Methods**************************************/
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "NewJSONObject", Keywords = "TextToSpeech New JSON Object"), Category = "TextToSpeech")

@@ -1,0 +1,225 @@
+[
+	{
+		"Name": "Or you can use the Text-toSpeech functionality to create new sound files.",
+		"Text": "Or you can use the Text-toSpeech functionality to create new sound files.",
+		"PhonemeArray": [
+			{
+				"Phoneme": "_",
+				"Duration": 0.082000002264976501
+			},
+			{
+				"Phoneme": "AO",
+				"Duration": 0.057000000029802322
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.063000001013278961
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.086000002920627594
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.05000000074505806
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.068000003695487976
+			},
+			{
+				"Phoneme": "AE",
+				"Duration": 0.037999998778104782
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.063000001013278961
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.085000000894069672
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.10400000214576721
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.064999997615814209
+			},
+			{
+				"Phoneme": "DH",
+				"Duration": 0.046999998390674591
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.046999998390674591
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.11900000274181366
+			},
+			{
+				"Phoneme": "EH",
+				"Duration": 0.090000003576278687
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.056000001728534698
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.070000000298023224
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.056000001728534698
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.041999999433755875
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.090000003576278687
+			},
+			{
+				"Phoneme": "P",
+				"Duration": 0.057000000029802322
+			},
+			{
+				"Phoneme": "IY",
+				"Duration": 0.10700000077486038
+			},
+			{
+				"Phoneme": "CH",
+				"Duration": 0.093000002205371857
+			},
+			{
+				"Phoneme": "F",
+				"Duration": 0.079000003635883331
+			},
+			{
+				"Phoneme": "AH",
+				"Duration": 0.064999997615814209
+			},
+			{
+				"Phoneme": "NG",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.028000000864267349
+			},
+			{
+				"Phoneme": "SH",
+				"Duration": 0.079999998211860657
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.035000000149011612
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.05299999937415123
+			},
+			{
+				"Phoneme": "AE",
+				"Duration": 0.10199999809265137
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.076999999582767487
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.061000000685453415
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.037000000476837158
+			},
+			{
+				"Phoneme": "IY",
+				"Duration": 0.13099999725818634
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.096000000834465027
+			},
+			{
+				"Phoneme": "UH",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.086999997496604919
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.050999999046325684
+			},
+			{
+				"Phoneme": "IY",
+				"Duration": 0.059999998658895493
+			},
+			{
+				"Phoneme": "EY",
+				"Duration": 0.10700000077486038
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.05000000074505806
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.059000000357627869
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.12999999523162842
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.12999999523162842
+			},
+			{
+				"Phoneme": "AW",
+				"Duration": 0.14699999988079071
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.061999998986721039
+			},
+			{
+				"Phoneme": "D",
+				"Duration": 0.037000000476837158
+			},
+			{
+				"Phoneme": "F",
+				"Duration": 0.10199999809265137
+			},
+			{
+				"Phoneme": "AY",
+				"Duration": 0.18000000715255737
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.12999999523162842
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.17000000178813934
+			},
+			{
+				"Phoneme": "_",
+				"Duration": 0.25799998641014099
+			}
+		],
+		"Asset": "/Content/TTS-OR-YOU-CAN10212018213339.wav"
+	}
+]

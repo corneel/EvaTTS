@@ -1,0 +1,217 @@
+[
+	{
+		"Name": "You can even change the light color or intensity for additional effect.",
+		"Text": "You can even change the light color or intensity for additional effect.",
+		"PhonemeArray": [
+			{
+				"Phoneme": "_",
+				"Duration": 0.082999996840953827
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.065999999642372131
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.048000000417232513
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.061000000685453415
+			},
+			{
+				"Phoneme": "AE",
+				"Duration": 0.037999998778104782
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.052000001072883606
+			},
+			{
+				"Phoneme": "IY",
+				"Duration": 0.1379999965429306
+			},
+			{
+				"Phoneme": "V",
+				"Duration": 0.046999998390674591
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.046999998390674591
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.075000002980232239
+			},
+			{
+				"Phoneme": "CH",
+				"Duration": 0.087999999523162842
+			},
+			{
+				"Phoneme": "EY",
+				"Duration": 0.13099999725818634
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.054999999701976776
+			},
+			{
+				"Phoneme": "JH",
+				"Duration": 0.078000001609325409
+			},
+			{
+				"Phoneme": "DH",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.059999998658895493
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.086000002920627594
+			},
+			{
+				"Phoneme": "AY",
+				"Duration": 0.11299999803304672
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.071000002324581146
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.075999997556209564
+			},
+			{
+				"Phoneme": "AH",
+				"Duration": 0.071000002324581146
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.081000000238418579
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.068000003695487976
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.10700000077486038
+			},
+			{
+				"Phoneme": "AO",
+				"Duration": 0.093000002205371857
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.079999998211860657
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.057000000029802322
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.061000000685453415
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.081000000238418579
+			},
+			{
+				"Phoneme": "EH",
+				"Duration": 0.068000003695487976
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.052000001072883606
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.075999997556209564
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.046999998390674591
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.043000001460313797
+			},
+			{
+				"Phoneme": "IY",
+				"Duration": 0.12700000405311584
+			},
+			{
+				"Phoneme": "F",
+				"Duration": 0.082000002264976501
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.043000001460313797
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.052000001072883606
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.052000001072883606
+			},
+			{
+				"Phoneme": "D",
+				"Duration": 0.071000002324581146
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.054999999701976776
+			},
+			{
+				"Phoneme": "SH",
+				"Duration": 0.10499999672174454
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.035999998450279236
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.032000001519918442
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.074000000953674316
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.074000000953674316
+			},
+			{
+				"Phoneme": "F",
+				"Duration": 0.10999999940395355
+			},
+			{
+				"Phoneme": "EH",
+				"Duration": 0.17000000178813934
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.087999999523162842
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.10100000351667404
+			},
+			{
+				"Phoneme": "_",
+				"Duration": 0.25400000810623169
+			}
+		],
+		"Asset": "/Content/TTS-YOU-CAN-EV10212018214056.wav"
+	}
+]

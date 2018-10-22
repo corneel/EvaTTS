@@ -1,0 +1,165 @@
+[
+	{
+		"Name": "Use the controls on your right to fine tune the timings.",
+		"Text": "Use the controls on your right to fine tune the timings.",
+		"PhonemeArray": [
+			{
+				"Phoneme": "_",
+				"Duration": 0.082000002264976501
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.076999999582767487
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.10700000077486038
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.064999997615814209
+			},
+			{
+				"Phoneme": "DH",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.079000003635883331
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.037000000476837158
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.056000001728534698
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.083999998867511749
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.064999997615814209
+			},
+			{
+				"Phoneme": "OW",
+				"Duration": 0.11999999731779099
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.13600000739097595
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.093000002205371857
+			},
+			{
+				"Phoneme": "AA",
+				"Duration": 0.092000000178813934
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.05000000074505806
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "AO",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.085000000894069672
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.085000000894069672
+			},
+			{
+				"Phoneme": "AY",
+				"Duration": 0.13400000333786011
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.064999997615814209
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.061999998986721039
+			},
+			{
+				"Phoneme": "UH",
+				"Duration": 0.046999998390674591
+			},
+			{
+				"Phoneme": "F",
+				"Duration": 0.10000000149011612
+			},
+			{
+				"Phoneme": "AY",
+				"Duration": 0.14300000667572021
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.075999997556209564
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.090000003576278687
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.18000000715255737
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.10000000149011612
+			},
+			{
+				"Phoneme": "DH",
+				"Duration": 0.071000002324581146
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.046999998390674591
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.11999999731779099
+			},
+			{
+				"Phoneme": "AY",
+				"Duration": 0.11900000274181366
+			},
+			{
+				"Phoneme": "M",
+				"Duration": 0.05000000074505806
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.11500000208616257
+			},
+			{
+				"Phoneme": "NG",
+				"Duration": 0.12399999797344208
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.15999999642372131
+			},
+			{
+				"Phoneme": "_",
+				"Duration": 0.25600001215934753
+			}
+		],
+		"Asset": "/Content/TTS-USE-THE-CO1021201821350.wav"
+	}
+]

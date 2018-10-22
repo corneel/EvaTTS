@@ -1,0 +1,245 @@
+[
+	{
+		"Name": "You can use this product to set the animation timings of existing sound files.",
+		"Text": "You can use this product to set the animation timings of existing sound files.",
+		"PhonemeArray": [
+			{
+				"Phoneme": "_",
+				"Duration": 0.082999996840953827
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.065999999642372131
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.05000000074505806
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.063000001013278961
+			},
+			{
+				"Phoneme": "AE",
+				"Duration": 0.035999998450279236
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.059000000357627869
+			},
+			{
+				"Phoneme": "Y",
+				"Duration": 0.090000003576278687
+			},
+			{
+				"Phoneme": "UW",
+				"Duration": 0.10899999737739563
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.061000000685453415
+			},
+			{
+				"Phoneme": "DH",
+				"Duration": 0.056000001728534698
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.061000000685453415
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.072999998927116394
+			},
+			{
+				"Phoneme": "P",
+				"Duration": 0.086000002920627594
+			},
+			{
+				"Phoneme": "R",
+				"Duration": 0.052000001072883606
+			},
+			{
+				"Phoneme": "AA",
+				"Duration": 0.094999998807907104
+			},
+			{
+				"Phoneme": "D",
+				"Duration": 0.041999999433755875
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.13300000131130219
+			},
+			{
+				"Phoneme": "K",
+				"Duration": 0.046000000089406967
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.065999999642372131
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.056000001728534698
+			},
+			{
+				"Phoneme": "UH",
+				"Duration": 0.046999998390674591
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.11400000005960464
+			},
+			{
+				"Phoneme": "EH",
+				"Duration": 0.085000000894069672
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.054000001400709152
+			},
+			{
+				"Phoneme": "DH",
+				"Duration": 0.039999999105930328
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.085000000894069672
+			},
+			{
+				"Phoneme": "AE",
+				"Duration": 0.1379999965429306
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.037999998778104782
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.052000001072883606
+			},
+			{
+				"Phoneme": "M",
+				"Duration": 0.05000000074505806
+			},
+			{
+				"Phoneme": "EY",
+				"Duration": 0.11400000005960464
+			},
+			{
+				"Phoneme": "SH",
+				"Duration": 0.10499999672174454
+			},
+			{
+				"Phoneme": "AX",
+				"Duration": 0.041000001132488251
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.074000000953674316
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.074000000953674316
+			},
+			{
+				"Phoneme": "AY",
+				"Duration": 0.12700000405311584
+			},
+			{
+				"Phoneme": "M",
+				"Duration": 0.052000001072883606
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.074000000953674316
+			},
+			{
+				"Phoneme": "NG",
+				"Duration": 0.070000000298023224
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.074000000953674316
+			},
+			{
+				"Phoneme": "AH",
+				"Duration": 0.054000001400709152
+			},
+			{
+				"Phoneme": "V",
+				"Duration": 0.054000001400709152
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.054000001400709152
+			},
+			{
+				"Phoneme": "G",
+				"Duration": 0.045000001788139343
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.075999997556209564
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.057000000029802322
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.075999997556209564
+			},
+			{
+				"Phoneme": "T",
+				"Duration": 0.052000001072883606
+			},
+			{
+				"Phoneme": "IH",
+				"Duration": 0.061000000685453415
+			},
+			{
+				"Phoneme": "NG",
+				"Duration": 0.065999999642372131
+			},
+			{
+				"Phoneme": "S",
+				"Duration": 0.10999999940395355
+			},
+			{
+				"Phoneme": "AW",
+				"Duration": 0.14399999380111694
+			},
+			{
+				"Phoneme": "N",
+				"Duration": 0.064999997615814209
+			},
+			{
+				"Phoneme": "D",
+				"Duration": 0.032000001519918442
+			},
+			{
+				"Phoneme": "F",
+				"Duration": 0.10700000077486038
+			},
+			{
+				"Phoneme": "AY",
+				"Duration": 0.18999999761581421
+			},
+			{
+				"Phoneme": "L",
+				"Duration": 0.12999999523162842
+			},
+			{
+				"Phoneme": "Z",
+				"Duration": 0.18000000715255737
+			},
+			{
+				"Phoneme": "_",
+				"Duration": 0.25099998712539673
+			}
+		],
+		"Asset": "/Content/TTS-YOU-CAN-US10212018213232.wav"
+	}
+]
