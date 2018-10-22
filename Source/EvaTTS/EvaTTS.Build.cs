@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 2018 Augmented Enterprise, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
 
@@ -14,19 +14,10 @@ public class EvaTTS : ModuleRules
             "Engine",
             "InputCore",
             "Json",
-            "JsonUtilities",
-            "Sockets",
-            "Networking"
+            "JsonUtilities"
         });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
-		// Uncomment if you are using Slate UI
-		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
-		// Uncomment if you are using online features
-		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
-
-		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
 	}
 }

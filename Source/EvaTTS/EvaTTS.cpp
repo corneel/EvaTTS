@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 2018 Augmented Enterprise, Inc. All Rights Reserved.
 
 #include "EvaTTS.h"
 #include "Modules/ModuleManager.h"

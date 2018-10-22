@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 2018 Augmented Enterprise, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
 using System.Collections.Generic;
@@ -13,9 +13,7 @@ public class EvaTTSTarget : TargetRules
             "SoundFormat",
             "EvaTTS",
             "Json",
-            "JsonUtilities",
-            "Sockets",
-            "Networking"
+            "JsonUtilities"
         } );
 	}
 }
