@@ -156,7 +156,7 @@
 				"Duration": 0.25400000810623169
 			}
 		],
-		"Asset": "SoundWave'/Game/EvaTTSResources/Eva-TTS-SpeechSynthesisIntroduction.Eva-TTS-SpeechSynthesisIntroduction'"
+		"Asset": "Eva-TTS-SpeechSynthesisIntroduction"
 	},
   {
     "Name": "ThisisEva",
@@ -215,6 +215,6 @@
         "Duration": 0.038671243935823441
       }
     ],
-    "Asset": "SoundWave'/Game/EvaTTSResources/This_is_Eva.This_is_Eva'"
+    "Asset": "This_is_Eva"
   }
 ]

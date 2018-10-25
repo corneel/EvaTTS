@@ -156,7 +156,7 @@
         "Duration": 0.25400000810623169
       }
     ],
-    "Asset": "SoundWave'/Game/EvaTTSResources/Eva-TTS-SpeechSynthesisIntroduction.Eva-TTS-SpeechSynthesisIntroduction'"
+    "Asset": "Eva-TTS-SpeechSynthesisIntroduction"
   },
   {
     "Name": "You can use this product to set the animation timings of existing sound files.",
@@ -399,7 +399,7 @@
         "Duration": 0.25099998712539673
       }
     ],
-    "Asset": "SoundWave'/Game/EvaTTSResources/Demo12.Demo12'"
+    "Asset": "Demo12"
   },
   {
     "Name": "Or you can use the Text-toSpeech functionality to create new sound files.",
@@ -622,7 +622,7 @@
         "Duration": 0.25799998641014099
       }
     ],
-    "Asset": "SoundWave'/Game/EvaTTSResources/TTS-OR-YOU-CAN10212018213339.TTS-OR-YOU-CAN10212018213339'"
+    "Asset": "TTS-OR-YOU-CAN10212018213339"
   },
   {
     "Name": "Use the controls on your right to fine tune the timings.",
@@ -785,7 +785,7 @@
         "Duration": 0.25600001215934753
       }
     ],
-    "Asset": "SoundWave'/Game/EvaTTSResources/TTS-USE-THE-CO1021201821350.TTS-USE-THE-CO1021201821350'"
+    "Asset": "TTS-USE-THE-CO1021201821350"
   },
   {
     "Name": "You can also use time dilation controls on your left to slow down the animation.",
@@ -1028,7 +1028,7 @@
         "Duration": 0.25099998712539673
       }
     ],
-    "Asset": "SoundWave'/Game/EvaTTSResources/TTS-YOU-CAN-AL10212018213647.TTS-YOU-CAN-AL10212018213647'"
+    "Asset": "TTS-YOU-CAN-AL10212018213647"
   },
   {
     "Name": "you can use any Microsoft voice that is installed on your computer.",
@@ -1239,7 +1239,7 @@
         "Duration": 0.25400000810623169
       }
     ],
-    "Asset": "SoundWave'/Game/EvaTTSResources/TTS-YOU-CAN-US10212018213743.TTS-YOU-CAN-US10212018213743'"
+    "Asset": "TTS-YOU-CAN-US10212018213743"
   },
   {
     "Name": "For special effects, you can change the avatar skin or accompanying particle by using the controls on your top right.",
@@ -1594,7 +1594,7 @@
         "Duration": 0.25499999523162842
       }
     ],
-    "Asset": "SoundWave'/Game/EvaTTSResources/TTS-FOR-SPECIA1021201821404.TTS-FOR-SPECIA1021201821404'"
+    "Asset": "TTS-FOR-SPECIA1021201821404"
   },
   {
     "Name": "You can even change the light color or intensity for additional effect.",
@@ -1809,7 +1809,7 @@
         "Duration": 0.25400000810623169
       }
     ],
-    "Asset": "SoundWave'/Game/EvaTTSResources/TTS-YOU-CAN-EV10212018214056.TTS-YOU-CAN-EV10212018214056'"
+    "Asset": "TTS-YOU-CAN-EV10212018214056"
   },
   {
     "Name": "When you select the save option, the wave file as well as the phoneme timings are stored in files for future use.",
@@ -2124,7 +2124,7 @@
         "Duration": 0.25099998712539673
       }
     ],
-    "Asset": "SoundWave'/Game/EvaTTSResources/TTS-WHEN-YOU-S10212018214331.TTS-WHEN-YOU-S10212018214331'"
+    "Asset": "TTS-WHEN-YOU-S10212018214331"
   },
   {
     "Name": "By now you have probably guessed it. This demonstration was prepared using the functionality available in this product.",
@@ -2495,6 +2495,6 @@
         "Duration": 0.25400000810623169
       }
     ],
-    "Asset": "SoundWave'/Game/EvaTTSResources/TTS-BY-NOW-YOU10212018214450.TTS-BY-NOW-YOU10212018214450'"
+    "Asset": "TTS-BY-NOW-YOU10212018214450"
   }
 ]
