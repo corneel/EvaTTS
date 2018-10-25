@@ -1,0 +1,373 @@
+[
+  {
+    "Name": "EvaAnimationSet",
+    "AnimationSet": {
+      "P": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      "S": {
+        "XAxis": 12.5,
+        "YAxis": 0
+      },
+      "AO": {
+        "XAxis": 50,
+        "YAxis": 0
+      },
+      "L": {
+        "XAxis": 75,
+        "YAxis": 100
+      },
+      "SH": {
+        "XAxis": 100,
+        "YAxis": 37.5
+      },
+      "T": {
+        "XAxis": 62.5,
+        "YAxis": 100
+      },
+      "B": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      "EY": {
+        "XAxis": 0,
+        "YAxis": 12.5
+      },
+      "M": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      "D": {
+        "XAxis": 62.5,
+        "YAxis": 100
+      },
+      "N": {
+        "XAxis": 62.5,
+        "YAxis": 100
+      },
+      "F": {
+        "XAxis": 12.5,
+        "YAxis": 100
+      },
+      "V": {
+        "XAxis": 12.5,
+        "YAxis": 100
+      },
+      "TH": {
+        "XAxis": 0,
+        "YAxis": 87.5
+      },
+      "K": {
+        "XAxis": 0,
+        "YAxis": 25
+      },
+      "AE": {
+        "XAxis": 0,
+        "YAxis": 12.5
+      },
+      "EH": {
+        "XAxis": 0,
+        "YAxis": 12.5
+      },
+      "AA": {
+        "XAxis": 50,
+        "YAxis": 0
+      },
+      "G": {
+        "XAxis": 0,
+        "YAxis": 25
+      },
+      "HH": {
+        "XAxis": 37.5,
+        "YAxis": 0
+      },
+      "JH": {
+        "XAxis": 100,
+        "YAxis": 50
+      },
+      "NG": {
+        "XAxis": 0,
+        "YAxis": 25
+      },
+      "R": {
+        "XAxis": 62.5,
+        "YAxis": 0
+      },
+      "W": {
+        "XAxis": 100,
+        "YAxis": 0
+      },
+      "Y": {
+        "XAxis": 0,
+        "YAxis": 0
+      },
+      "Z": {
+        "XAxis": 12.5,
+        "YAxis": 0
+      },
+      "ZH": {
+        "XAxis": 100,
+        "YAxis": 37.5
+      },
+      "CH": {
+        "XAxis": 100,
+        "YAxis": 50
+      },
+      "IH": {
+        "XAxis": 0,
+        "YAxis": 0
+      },
+      "AH": {
+        "XAxis": 37.5,
+        "YAxis": 0
+      },
+      "UW": {
+        "XAxis": 87.5,
+        "YAxis": 0
+      },
+      "IY": {
+        "XAxis": 0,
+        "YAxis": 0
+      },
+      "OW": {
+        "XAxis": 50,
+        "YAxis": 0
+      },
+      "OY": {
+        "XAxis": 0,
+        "YAxis": 0
+      },
+      "AW": {
+        "XAxis": 87.5,
+        "YAxis": 0
+      },
+      "ER": {
+        "XAxis": 62.5,
+        "YAxis": 0
+      },
+      "DH": {
+        "XAxis": 0,
+        "YAxis": 87.5
+      },
+      "UH": {
+        "XAxis": 37.5,
+        "YAxis": 0
+      },
+      "!": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      ".": {
+        "XAxis": 25,
+        "YAxis": 100
+      }
+    }
+  },
+  {
+    "Name": "AmericanPhonemesSet",
+    "AnimationSet": {
+      "Dummy": {
+        "XAxis": 26,
+        "YAxis": 100
+      },
+      "-": {
+        "XAxis": 26,
+        "YAxis": 100
+      },
+
+      "!": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      "&": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      ",": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      ".": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      "?": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      "_": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      "1": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      "2": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      "AA": {
+        "XAxis": 50,
+        "YAxis": 0
+      },
+      "AE": {
+        "XAxis": 0,
+        "YAxis": 12.5
+      },
+      "AH": {
+        "XAxis": 37.5,
+        "YAxis": 0
+      },
+      "AO": {
+        "XAxis": 50,
+        "YAxis": 0
+      },
+      "AW": {
+        "XAxis": 87.5,
+        "YAxis": 0
+      },
+      "AX": {
+        "XAxis": 50,
+        "YAxis": 0
+      },
+      "AY": {
+        "XAxis": 50,
+        "YAxis": 0
+      },
+      "B": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      "CH": {
+        "XAxis": 100,
+        "YAxis": 50
+      },
+      "D": {
+        "XAxis": 62.5,
+        "YAxis": 100
+      },
+      "DH": {
+        "XAxis": 0,
+        "YAxis": 87.5
+      },
+      "EH": {
+        "XAxis": 0,
+        "YAxis": 12.5
+      },
+      "ER": {
+        "XAxis": 62.5,
+        "YAxis": 0
+      },
+      "EY": {
+        "XAxis": 0,
+        "YAxis": 12.5
+      },
+      "F": {
+        "XAxis": 12.5,
+        "YAxis": 100
+      },
+      "G": {
+        "XAxis": 0,
+        "YAxis": 25
+      },
+      "H": {
+        "XAxis": 37.5,
+        "YAxis": 0
+      },
+      "IH": {
+        "XAxis": 0,
+        "YAxis": 0
+      },
+      "IY": {
+        "XAxis": 0,
+        "YAxis": 0
+      },
+      "JH": {
+        "XAxis": 100,
+        "YAxis": 50
+      },
+      "K": {
+        "XAxis": 0,
+        "YAxis": 25
+      },
+      "L": {
+        "XAxis": 75,
+        "YAxis": 100
+      },
+      "M": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      "N": {
+        "XAxis": 62.5,
+        "YAxis": 100
+      },
+      "NG": {
+        "XAxis": 0,
+        "YAxis": 25
+      },
+      "OW": {
+        "XAxis": 50,
+        "YAxis": 0
+      },
+      "OY": {
+        "XAxis": 0,
+        "YAxis": 0
+      },
+      "P": {
+        "XAxis": 25,
+        "YAxis": 100
+      },
+      "R": {
+        "XAxis": 62.5,
+        "YAxis": 0
+      },
+      "S": {
+        "XAxis": 12.5,
+        "YAxis": 0
+      },
+      "SH": {
+        "XAxis": 100,
+        "YAxis": 37.5
+      },
+      "T": {
+        "XAxis": 62.5,
+        "YAxis": 100
+      },
+      "TH": {
+        "XAxis": 0,
+        "YAxis": 87.5
+      },
+      "UH": {
+        "XAxis": 37.5,
+        "YAxis": 0
+      },
+      "UW": {
+        "XAxis": 87.5,
+        "YAxis": 0
+      },
+      "V": {
+        "XAxis": 12.5,
+        "YAxis": 100
+      },
+      "W": {
+        "XAxis": 100,
+        "YAxis": 0
+      },
+      "Y": {
+        "XAxis": 0,
+        "YAxis": 0
+      },
+      "Z": {
+        "XAxis": 12.5,
+        "YAxis": 0
+      },
+      "ZH": {
+        "XAxis": 100,
+        "YAxis": 37.5
+      }
+    }
+  }
+]
