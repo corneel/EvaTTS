@@ -1,125 +1,121 @@
-// Copyright 2018 Augmented Enterprise, Inc. All Rights Reserved.
+// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "Engine/AssetManager.h"
 #include "PrimaryAssetId.h"
 #include "AssetData.h"
 #include "AssetBundleData.h"
-#include "GameFramework/Actor.h"
 #include "Misc/FileHelper.h"
 #include <cmath>
 
 #include "Runtime/JsonUtilities/Public/JsonUtilities.h"
 #include "Runtime/JsonUtilities/Public/JsonObjectConverter.h"
-#include "Runtime/JsonUtilities/Public/JsonObjectConverter.h"
 #include "Runtime/Json/Public/Dom/JsonObject.h"
 #include "SharedPointer.h"
-//
-///*************************************** Windows Stuff ***************************************************/
-//
-//#include "AllowWindowsPlatformTypes.h"
-//#include "AllowWindowsPlatformAtomics.h"
-//
-//#pragma warning(push)
-//#pragma warning(disable: 4191) // warning C4191: 'type cast' : unsafe conversion
-//#pragma warning(disable: 4996) // error C4996: 'GetVersionEx': was declared deprecated
-//
-//#define WIN32_LEAN_AND_MEAN
-//
-//// atltransactionmanager.h doesn't use the W equivalent functions, use this workaround
-//#ifndef DeleteFile
-//#define DeleteFile DeleteFileW
-//#endif
-//#ifndef MoveFile
-//#define MoveFile MoveFileW
-//#endif
-//#ifndef LoadString
-//#define LoadString LoadStringW
-//#endif
-//#ifndef GetMessage
-//#define GetMessage GetMessageW
-//#endif
-//
-//#include <sapi.h>
-//#include <sphelper.h>
-//
-//#undef DeleteFile
-//#undef MoveFile
-//
-//#pragma warning(pop)
-//
-//#include "HideWindowsPlatformTypes.h"
-//
-///*************************************** Windows Stuff ***************************************************/
 
-#include "EvaTTSActorComponent.h"
+/*************************************** Windows Stuff ***************************************************/
 
-#include "EvaActor.generated.h"
+#include "AllowWindowsPlatformTypes.h"
+#include "AllowWindowsPlatformAtomics.h"
 
-//UENUM(BlueprintType, Category = "TextToSpeech")
-//enum class EJsonType : uint8
-//{
-//	None	UMETA(DisplayName = "None"),
-//	Null	UMETA(DisplayName = "Null"),
-//	String	UMETA(DisplayName = "String"),
-//	Number	UMETA(DisplayName = "Number"),
-//	Boolean UMETA(DisplayName = "Boolean"),
-//	Array	UMETA(DisplayName = "Array"),
-//	Object	UMETA(DisplayName = "Object")
-//};
-//
-//UCLASS(BlueprintType)
-//class UJSONValue : public UObject
-//{
-//
-//	GENERATED_BODY()
-//public:
-//	TSharedPtr<FJsonValue> JSONValue;
-//};
-//
-//UCLASS(BlueprintType)
-//class UJSONHandle : public UObject
-//{
-//	GENERATED_BODY()
-//public:
-//	TSharedPtr<FJsonObject> JSONObject;
-//};
-//
-//UCLASS(BlueprintType)
-//class UJSONHandleArray : public UObject
-//{
-//	GENERATED_BODY()
-//public:
-//	TArray<TSharedPtr<FJsonValue>> JSONObjectArray;
-//};
-//
-//USTRUCT(BlueprintType)
-//struct FSoundIndexArrayStruct
-//{
-//	GENERATED_BODY()
-//
-//		UPROPERTY(BlueprintReadWrite, Category = "Student") int32 Age;
-//	UPROPERTY(BlueprintReadWrite, Category = "Student") FString Name;
-//};
-//
-//UCLASS(BlueprintType)
-//class UJSONStructArray : public UObject
-//{
-//	GENERATED_BODY()
-//public:
-//	TArray<FSoundIndexArrayStruct> SoundIndex;
-//};
+#pragma warning(push)
+#pragma warning(disable: 4191) // warning C4191: 'type cast' : unsafe conversion
+#pragma warning(disable: 4996) // error C4996: 'GetVersionEx': was declared deprecated
 
-UCLASS()
-class EVATTS_API AEvaActor : public AActor
+#define WIN32_LEAN_AND_MEAN
+
+// atltransactionmanager.h doesn't use the W equivalent functions, use this workaround
+#ifndef DeleteFile
+#define DeleteFile DeleteFileW
+#endif
+#ifndef MoveFile
+#define MoveFile MoveFileW
+#endif
+#ifndef LoadString
+#define LoadString LoadStringW
+#endif
+#ifndef GetMessage
+#define GetMessage GetMessageW
+#endif
+
+#include <sapi.h>
+#include <sphelper.h>
+
+#undef DeleteFile
+#undef MoveFile
+
+#pragma warning(pop)
+
+#include "HideWindowsPlatformTypes.h"
+
+/*************************************** Windows Stuff ***************************************************/
+
+
+#include "Kismet/BlueprintFunctionLibrary.h"
+#include "EvaTTSPluginBPLibrary.generated.h"
+
+UENUM(BlueprintType, Category = "TextToSpeech")
+enum class EJsonType : uint8
+{
+	None	UMETA(DisplayName = "None"),
+	Null	UMETA(DisplayName = "Null"),
+	String	UMETA(DisplayName = "String"),
+	Number	UMETA(DisplayName = "Number"),
+	Boolean UMETA(DisplayName = "Boolean"),
+	Array	UMETA(DisplayName = "Array"),
+	Object	UMETA(DisplayName = "Object")
+};
+
+UCLASS(BlueprintType)
+class UJSONValue : public UObject
+{
+
+	GENERATED_BODY()
+public:
+	TSharedPtr<FJsonValue> JSONValue;
+};
+
+UCLASS(BlueprintType)
+class UJSONHandle : public UObject
+{
+	GENERATED_BODY()
+public:
+	TSharedPtr<FJsonObject> JSONObject;
+};
+
+UCLASS(BlueprintType)
+class UJSONHandleArray : public UObject
+{
+	GENERATED_BODY()
+public:
+	TArray<TSharedPtr<FJsonValue>> JSONObjectArray;
+};
+
+USTRUCT(BlueprintType)
+struct FSoundIndexArrayStruct
 {
 	GENERATED_BODY()
 
-public:
+		UPROPERTY(BlueprintReadWrite, Category = "Student") int32 Age;
+	UPROPERTY(BlueprintReadWrite, Category = "Student") FString Name;
+};
 
-	AEvaActor();
+UCLASS(BlueprintType)
+class UJSONStructArray : public UObject
+{
+	GENERATED_BODY()
+public:
+	TArray<FSoundIndexArrayStruct> SoundIndex;
+};
+
+
+UCLASS(BlueprintType, Blueprintable)
+class UEvaTTSPluginBPLibrary : public UBlueprintFunctionLibrary
+{
+	GENERATED_UCLASS_BODY()
+
+		UEvaTTSPluginBPLibrary();
 
 	/*************************************************** SAPI TTS Methods *************************************************/
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "TTSSetVoice", Keywords = "Set Voice TTS"), Category = "TextToSpeech")
@@ -140,6 +136,9 @@ public:
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "TTSSpeak", Keywords = "Speak TTS"), Category = "TextToSpeech")
 		bool TTSSpeak(FString Value, bool PreparePhonemes = false);
 
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "TTSPausibleSpeak", Keywords = "Speak Pausible Speak TTS"), Category = "TextToSpeech")
+		bool TTSPausibleSpeak(FString Value);
+
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "TTSSpeakFile", Keywords = "Speak TTS File Stream"), Category = "TextToSpeech")
 		bool TTSSpeakStream(FString Value);
 
@@ -148,9 +147,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "TTSGetEvents", Keywords = "Get Events TTS"), Category = "TextToSpeech")
 		bool TTSGetEvents(TArray<int>& TTSPhonemesIndexes, TArray<int>& TTSPhonemesDurations);
-
-	//UFUNCTION(BlueprintCallable, meta = (DisplayName = "TTSGenerateColors", Keywords = "Generate Colors"), Category = "TextToSpeech")
-	//	static bool GenerateColors(TArray<FLinearColor>& ColorArray, int Elements, int Skip = 1);
 
 	/**************************************JSON Methods**************************************/
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "NewJSONObject", Keywords = "TextToSpeech New JSON Object"), Category = "TextToSpeech")
@@ -246,150 +242,15 @@ public:
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "GetJSONArrayTypesAndValues", Keywords = "TextToSpeech Get JSON Types and Values"), Category = "TextToSpeech")
 		static void GetJSONArrayTypesAndValues(UJSONHandleArray* JSONHandleArray, TMap<EJsonType, UJSONValue*>& TypesAndValues, int& ElementCount);
 
-	/**************************************JSON Methods**************************************/
-
-	//UFUNCTION(BlueprintCallable, meta = (DisplayName = "AssetManagerLoadAsset", Keywords = "TextToSpeech Load Dynamic Asset"), Category = "TextToSpeech")
-	//	static void AssetManagerLoadAsset(FString Name, FString Type);
-
-
-
-	/***************************************** Method to analyze any structure/array ************************************************/
-	UFUNCTION(BlueprintCallable, Category = "Example", CustomThunk, meta = (CustomStructureParam = "AnyStruct"))
-		static void ReceiveSomeStruct(UProperty* AnyStruct);
-
-	/* Example function for parsing a single property
-	* @param Property    the property reflection data
-	* @param ValuePtr    the pointer to the property value
-	*/
-	static void ParseProperty(UProperty* Property, void* ValuePtr)
-	{
-
-		float FloatValue;
-		int32 IntValue;
-		bool BoolValue;
-		FString StringValue;
-		FName NameValue;
-		FText TextValue;
-
-
-		// Here's how to read integer and float properties
-		if (UNumericProperty *NumericProperty = Cast<UNumericProperty>(Property))
-		{
-			if (NumericProperty->IsFloatingPoint())
-			{
-				FloatValue = NumericProperty->GetFloatingPointPropertyValue(ValuePtr);
-			}
-			else if (NumericProperty->IsInteger())
-			{
-				IntValue = NumericProperty->GetSignedIntPropertyValue(ValuePtr);
-			}
-		}
-
-		// How to read booleans
-		if (UBoolProperty* BoolProperty = Cast<UBoolProperty>(Property))
-		{
-			BoolValue = BoolProperty->GetPropertyValue(ValuePtr);
-		}
-
-		// Reading names
-		if (UNameProperty* NameProperty = Cast<UNameProperty>(Property))
-		{
-			NameValue = NameProperty->GetPropertyValue(ValuePtr);
-		}
-
-		// Reading strings
-		if (UStrProperty* StringProperty = Cast<UStrProperty>(Property))
-		{
-			StringValue = StringProperty->GetPropertyValue(ValuePtr);
-		}
-
-		// Reading texts
-		if (UTextProperty* TextProperty = Cast<UTextProperty>(Property))
-		{
-			TextValue = TextProperty->GetPropertyValue(ValuePtr);
-		}
-
-		// Reading an array
-		if (UArrayProperty* ArrayProperty = Cast<UArrayProperty>(Property))
-		{
-			// We need the helper to get to the items of the array            
-			FScriptArrayHelper Helper(ArrayProperty, ValuePtr);
-			for (int32 i = 0, n = Helper.Num(); i < n; ++i)
-			{
-				ParseProperty(ArrayProperty->Inner, Helper.GetRawPtr(i));
-			}
-		}
-
-		// Reading a nested struct
-		if (UStructProperty* StructProperty = Cast<UStructProperty>(Property))
-		{
-			IterateThroughStructProperty(StructProperty, ValuePtr);
-		}
-	}
-
-	/*
-	* Example function for iterating through all properties of a struct
-	* @param StructProperty    The struct property reflection data
-	* @param StructPtr        The pointer to the struct value
-	*/
-	static void IterateThroughStructProperty(UStructProperty* StructProperty, void* StructPtr)
-	{
-		// Walk the structs' properties
-		UScriptStruct* Struct = StructProperty->Struct;
-		for (TFieldIterator<UProperty> It(Struct); It; ++It)
-		{
-			UProperty* Property = *It;
-
-			// This is the variable name if you need it
-			FString VariableName = Property->GetName();
-
-			// Never assume ArrayDim is always 1
-			for (int32 ArrayIndex = 0; ArrayIndex < Property->ArrayDim; ArrayIndex++)
-			{
-				// This grabs the pointer to where the property value is stored
-				void* ValuePtr = Property->ContainerPtrToValuePtr<void>(StructPtr, ArrayIndex);
-
-				// Parse this property
-				ParseProperty(Property, ValuePtr);
-			}
-		}
-	}
-
-	DECLARE_FUNCTION(execReceiveSomeStruct)
-	{
-		// Steps into the stack, walking to the next property in it
-		Stack.Step(Stack.Object, NULL);
-
-		// Grab the last property found when we walked the stack
-		// This does not contains the property value, only its type information
-		UStructProperty* StructProperty = ExactCast<UStructProperty>(Stack.MostRecentProperty);
-
-		// Grab the base address where the struct actually stores its data
-		// This is where the property value is truly stored
-		void* StructPtr = Stack.MostRecentPropertyAddress;
-
-		// We need this to wrap up the stack
-		P_FINISH;
-
-		// Iterate through the struct
-		IterateThroughStructProperty(StructProperty, StructPtr);
-	}
-
-
-protected:
-	// Called when the game starts or when spawned
+	private:
 
 	static void PrintJSONArray(TArray<TSharedPtr<FJsonValue>> JSONHandleArray, int level);
 	static void PrintJSONValue(TSharedPtr<FJsonValue> Value, int level);
 	static void PrintJSONObject(TSharedPtr<FJsonObject> JSONObject, int level);
 
-	virtual void BeginPlay() override;
 	bool TTSInit();
-	~AEvaActor();
 
 	/***************************************** SAPI TTS Events ************************************************/
-	//static void __stdcall SpeechEventCallback(WPARAM w_param, LPARAM l_param);
-
 	static void __stdcall SpeechEventCallback(WPARAM w_param, LPARAM l_param)
 	{
 		//std::cout << "callback function\n";
@@ -413,16 +274,16 @@ protected:
 
 			switch (event.eEventId) {
 			case SPEI_START_INPUT_STREAM:
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_START_INPUT_STREAM"));
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_START_INPUT_STREAM"));
 				break;
 
 			case SPEI_END_INPUT_STREAM:
 				char_position_ = utterance_.Len();
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_END_INPUT_STREAM"));
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_END_INPUT_STREAM"));
 				break;
 
 			case SPEI_TTS_BOOKMARK:
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_TTS_BOOKMARK"));
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_TTS_BOOKMARK"));
 				break;
 
 			case SPEI_WORD_BOUNDARY:
@@ -431,7 +292,7 @@ protected:
 				pTTS->pVoice->GetStatus(&eventStatus, NULL);
 				start = eventStatus.ulInputWordPos;
 				end = eventStatus.ulInputWordLen;
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_WORD_BOUNDARY. Start: %d, length: %d."), eventStatus.ulInputWordPos, eventStatus.ulInputWordLen);
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_WORD_BOUNDARY. Start: %d, length: %d."), eventStatus.ulInputWordPos, eventStatus.ulInputWordLen);
 				break;
 
 			case SPEI_SENTENCE_BOUNDARY:
@@ -439,11 +300,11 @@ protected:
 				pTTS->pVoice->GetStatus(&eventStatus, NULL);
 				start = eventStatus.ulInputSentPos;
 				end = eventStatus.ulInputSentLen;
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_SENTENCE_BOUNDARY. Start: %d, length: %d."), eventStatus.ulInputSentPos, eventStatus.ulInputSentLen);
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_SENTENCE_BOUNDARY. Start: %d, length: %d."), eventStatus.ulInputSentPos, eventStatus.ulInputSentLen);
 				break;
 
 			case SPEI_VISEME:
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_VISEME"));
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_VISEME"));
 				break;
 
 			case SPEI_PHONEME:
@@ -454,7 +315,7 @@ protected:
 				//TTSPhonemesIndexes.Add(NextPhonemeIndex);
 				TTSPhonemesDurations.Add(CurrentDuration);
 
-				UE_LOG(LogTemp, Warning, TEXT("AEvaActor::OnSpeechEvent: SPEI_PHONEME. Current phoneme index %d, duration %d"), CurrentPhonemeIndex, CurrentDuration);
+				UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::OnSpeechEvent: SPEI_PHONEME. Current phoneme index %d, duration %d"), CurrentPhonemeIndex, CurrentDuration);
 
 				break;
 			}
@@ -522,16 +383,16 @@ protected:
 
 			switch (event.eEventId) {
 			case SPEI_START_INPUT_STREAM:
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_START_INPUT_STREAM"));
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_START_INPUT_STREAM"));
 				break;
 
 			case SPEI_END_INPUT_STREAM:
 				char_position_ = utterance_.Len();
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_END_INPUT_STREAM"));
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_END_INPUT_STREAM"));
 				break;
 
 			case SPEI_TTS_BOOKMARK:
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_TTS_BOOKMARK"));
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_TTS_BOOKMARK"));
 				break;
 
 			case SPEI_WORD_BOUNDARY:
@@ -540,7 +401,7 @@ protected:
 				pTTS->pVoice->GetStatus(&eventStatus, NULL);
 				start = eventStatus.ulInputWordPos;
 				end = eventStatus.ulInputWordLen;
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_WORD_BOUNDARY. Start: %d, length: %d."), eventStatus.ulInputWordPos, eventStatus.ulInputWordLen);
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_WORD_BOUNDARY. Start: %d, length: %d."), eventStatus.ulInputWordPos, eventStatus.ulInputWordLen);
 				break;
 
 			case SPEI_SENTENCE_BOUNDARY:
@@ -548,11 +409,11 @@ protected:
 				pTTS->pVoice->GetStatus(&eventStatus, NULL);
 				start = eventStatus.ulInputSentPos;
 				end = eventStatus.ulInputSentLen;
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_SENTENCE_BOUNDARY. Start: %d, length: %d."), eventStatus.ulInputSentPos, eventStatus.ulInputSentLen);
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_SENTENCE_BOUNDARY. Start: %d, length: %d."), eventStatus.ulInputSentPos, eventStatus.ulInputSentLen);
 				break;
 
 			case SPEI_VISEME:
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_VISEME"));
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_VISEME"));
 				break;
 
 			case SPEI_PHONEME:
@@ -563,8 +424,8 @@ protected:
 				//TTSPhonemesIndexes.Add(NextPhonemeIndex);
 				TTSPhonemesDurations.Add(CurrentDuration);
 
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_PHONEME. Current phoneme index %d, duration %d"), CurrentPhonemeIndex, CurrentDuration);
-				//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak event: SPEI_PHONEME. Next phoneme index %d"), NextPhonemeIndex);
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_PHONEME. Current phoneme index %d, duration %d"), CurrentPhonemeIndex, CurrentDuration);
+				//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSActorComponent::TTSSpeak event: SPEI_PHONEME. Next phoneme index %d"), NextPhonemeIndex);
 
 				break;
 			}
@@ -616,18 +477,10 @@ protected:
 	}
 	/***************************************** SAPI TTS Events ************************************************/
 
-public:
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-
-private:
-
 	TArray<int> TTSPhonemesIndexes;
 	TArray<int> TTSPhonemesDurations;
-	//HANDLE hWait;
 
-	static AEvaActor* pTTS;
+	static UEvaTTSPluginBPLibrary* pTTS;
 	ISpVoice * pVoice = NULL;
 	ISpStream * pStream = NULL;
 	ISpObjectToken * pVoiceName = NULL;
@@ -636,6 +489,4 @@ private:
 	ISpObjectTokenCategory * cpSpCategory = NULL;
 	FString Name;
 	bool InitRan = false;
-
 };
-

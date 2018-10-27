@@ -1,50 +1,29 @@
-// Copyright 2018 Augmented Enterprise, Inc. All Rights Reserved.
+// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
 
-#include "EvaActor.h"
+#include "EvaTTSPluginBPLibrary.h"
+#include "EvaTTSPlugin.h"
 
-AEvaActor* AEvaActor::pTTS = NULL;
 
-// Sets default values
-AEvaActor::AEvaActor()
+UEvaTTSPluginBPLibrary* UEvaTTSPluginBPLibrary::pTTS = NULL;
+
+UEvaTTSPluginBPLibrary::UEvaTTSPluginBPLibrary(const FObjectInitializer& ObjectInitializer)
+: Super(ObjectInitializer)
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-	AEvaActor::pTTS = this;
+	UEvaTTSPluginBPLibrary::pTTS = this;
 }
 
-AEvaActor::~AEvaActor()
+// Sets default values for this component's properties
+UEvaTTSPluginBPLibrary::UEvaTTSPluginBPLibrary()
 {
-	if (pVoice)
-		pVoice->Release();
-	pVoice = NULL;
-	::CoUninitialize();
-}
-
-// Called when the game starts or when spawned
-void AEvaActor::BeginPlay()
-{
-	Super::BeginPlay();
-	if (!TTSInit())
-	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor: TTSInit failed: "));
-	}
-}
-
-// Called every frame
-void AEvaActor::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
+	UEvaTTSPluginBPLibrary::pTTS = this;
 }
 
 /****************************************************************************************
  *                               Text to Speech calls
  ****************************************************************************************/
 
-bool AEvaActor::TTSInit()
+bool UEvaTTSPluginBPLibrary::TTSInit()
 {
-	/*OnKafkaMessageEvent.AddDynamic(this, &UKafkaBPLibrary::OnKafkaMessage);
-	OnKafkaProduceMessageEvent.AddDynamic(this, &UKafkaBPLibrary::OnKafkaProduceEvent);*/
 	if (InitRan)
 	{
 		return true;
@@ -54,7 +33,7 @@ bool AEvaActor::TTSInit()
 
 	if (FAILED(::CoInitialize(NULL)))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor: FAILED(::CoInitialize(NULL))"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary: FAILED(::CoInitialize(NULL))"));
 		return false;
 	}
 
@@ -63,7 +42,7 @@ bool AEvaActor::TTSInit()
 	HRESULT hr = CoCreateInstance(CLSID_SpVoice, NULL, CLSCTX_ALL, IID_ISpVoice, (void **)&pVoice);
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSInit: CoCreateInstance of ISpVoice failed: "));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSInit: CoCreateInstance of ISpVoice failed: "));
 		return false;
 	}
 
@@ -73,7 +52,7 @@ bool AEvaActor::TTSInit()
 
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSInit: CoCreateInstance of ISpObjectTokenCategory failed: "));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSInit: CoCreateInstance of ISpObjectTokenCategory failed: "));
 		return false;
 	}
 
@@ -82,21 +61,21 @@ bool AEvaActor::TTSInit()
 	hr = CoCreateInstance(CLSID_SpObjectTokenCategory, NULL, CLSCTX_INPROC_SERVER, __uuidof(ISpObjectTokenCategory), (void **)&cpSpCategory);
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSInit: Creation of ISpObjectTokenCategory failed: "));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSInit: Creation of ISpObjectTokenCategory failed: "));
 		return false;
 	}
 
 	hr = cpSpCategory->SetId(SPCAT_VOICES, false);
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSInit: Setting of id in ISpObjectTokenCategory failed: "));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSInit: Setting of id in ISpObjectTokenCategory failed: "));
 		return false;
 	}
 
 	hr = CoCreateInstance(CLSID_SpStream, NULL, CLSCTX_ALL, IID_ISpStream, (void **)&pStream);
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSInit: Creation of ISpStream failed: "));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSInit: Creation of ISpStream failed: "));
 		return false;
 	}
 
@@ -112,15 +91,15 @@ bool AEvaActor::TTSInit()
 
 }
 
-bool AEvaActor::TTSListVoices(TArray<FString>& Voices)
+bool UEvaTTSPluginBPLibrary::TTSListVoices(TArray<FString>& Voices)
 {
-	if (!TTSInit()) return false; 
+	if (!TTSInit()) return false;
 
 	HRESULT hr = S_OK;
 
 	if (cpSpCategory == NULL)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSListVoices cpSpCategory is NULL "));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSListVoices cpSpCategory is NULL "));
 		return false;
 	}
 
@@ -156,21 +135,21 @@ bool AEvaActor::TTSListVoices(TArray<FString>& Voices)
 
 }
 
-bool AEvaActor::TTSGetEvents(TArray<int>& PhonemesIndexes, TArray<int>& PhonemesDurations)
+bool UEvaTTSPluginBPLibrary::TTSGetEvents(TArray<int>& PhonemesIndexes, TArray<int>& PhonemesDurations)
 {
-	//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSGetEvents event: Array sizes %d, duration %d"), TTSPhonemesIndexes.Num(), TTSPhonemesDurations.Num());
+	//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSGetEvents event: Array sizes %d, duration %d"), TTSPhonemesIndexes.Num(), TTSPhonemesDurations.Num());
 	//SPEVENT event;
 	//memset(&event, 0, sizeof(SPEVENT));
 
-	////UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSGetEvents Before wait."));
+	////UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSGetEvents Before wait."));
 
 	//WaitAndPumpMessagesWithTimeout(hWait, INFINITE);
 
-	////UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSGetEvents After wait."));
+	////UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSGetEvents After wait."));
 
 	//while (S_OK == pTTS->pVoice->GetEvents(1, &event, NULL))
 	//{
-	//	//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSGetEvents Event found."));
+	//	//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSGetEvents Event found."));
 	//	switch (event.eEventId)
 	//	{
 	//		case SPEI_PHONEME:
@@ -185,16 +164,16 @@ bool AEvaActor::TTSGetEvents(TArray<int>& PhonemesIndexes, TArray<int>& Phonemes
 	//	SpClearEvent(&event);
 	//}
 
-	//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSGetEvents End of events."));
-	
-	
+	//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSGetEvents End of events."));
+
+
 	PhonemesIndexes = TTSPhonemesIndexes;
 	PhonemesDurations = TTSPhonemesDurations;
-	//UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSGetEvents event: Array sizes at end of method %d, duration %d"), TTSPhonemesIndexes.Num(), TTSPhonemesDurations.Num());
+	//UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSGetEvents event: Array sizes at end of method %d, duration %d"), TTSPhonemesIndexes.Num(), TTSPhonemesDurations.Num());
 	return false;
 }
 
-bool AEvaActor::TTSSetVoice(FString Name)
+bool UEvaTTSPluginBPLibrary::TTSSetVoice(FString Name)
 {
 	if (!TTSInit()) return false;
 
@@ -202,13 +181,13 @@ bool AEvaActor::TTSSetVoice(FString Name)
 
 	if (cpSpCategory == NULL)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSetVoice cpSpCategory is NULL "));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSetVoice cpSpCategory is NULL "));
 		return false;
 	}
 
 	if (pVoice == NULL)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSetVoice pVoice is NULL "));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSetVoice pVoice is NULL "));
 		return false;
 	}
 
@@ -219,7 +198,7 @@ bool AEvaActor::TTSSetVoice(FString Name)
 
 	//if (SUCCEEDED(hr = cpSpCategory->EnumTokens(L"Name=Microsoft Anna", NULL, &cpSpEnumTokens))) 
 	if (SUCCEEDED(hr = cpSpCategory->EnumTokens(*Key, NULL, &cpSpEnumTokens)))
-	{			
+	{
 		cpSpEnumTokens->GetCount(&TokenCnt);
 		if (TokenCnt > 0)
 		{
@@ -239,46 +218,46 @@ bool AEvaActor::TTSSetVoice(FString Name)
 	return false;
 }
 
-bool AEvaActor::TTSSetVolume(int Volume)
+bool UEvaTTSPluginBPLibrary::TTSSetVolume(int Volume)
 {
 	if (!TTSInit()) return false;
 	HRESULT hr = pVoice->SetVolume(Volume);
 
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSetVolume method failed"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSetVolume method failed"));
 		return false;
 	}
 	return true;
 }
 
-bool AEvaActor::TTSPause()
+bool UEvaTTSPluginBPLibrary::TTSPause()
 {
 	if (!TTSInit()) return false;
 	HRESULT hr = pVoice->Pause();
 
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSPause method failed"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSPause method failed"));
 		return false;
 	}
 	return true;
 }
 
-bool AEvaActor::TTSResume()
+bool UEvaTTSPluginBPLibrary::TTSResume()
 {
 	if (!TTSInit()) return false;
 	HRESULT hr = pVoice->Resume();
 
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSResume method failed"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSResume method failed"));
 		return false;
 	}
 	return true;
 }
 
-bool AEvaActor::TTSSaveFile(FString FileName, FString Text)
+bool UEvaTTSPluginBPLibrary::TTSSaveFile(FString FileName, FString Text)
 {
 	if (!TTSInit()) return false;
 
@@ -295,14 +274,14 @@ bool AEvaActor::TTSSaveFile(FString FileName, FString Text)
 	hr = SPBindToFile(*FullName, SPFILEMODE::SPFM_CREATE_ALWAYS, &pStream, &Format.FormatId(), Format.WaveFormatExPtr());
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSaveFile creation of bind to file failed"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSaveFile creation of bind to file failed"));
 		return false;
 	}
 
 	hr = pVoice->SetOutput(pStream, true);
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSaveFile set output stream ""true"" failed"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSaveFile set output stream ""true"" failed"));
 		return false;
 	}
 
@@ -314,31 +293,31 @@ bool AEvaActor::TTSSaveFile(FString FileName, FString Text)
 	hr = pVoice->SetOutput(pStream, false);
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSaveFile set output stream ""false"" failed"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSaveFile set output stream ""false"" failed"));
 		return false;
 	}
 
 	hr = pStream->Close();
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSaveFile close file failed"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSaveFile close file failed"));
 		return false;
 	}
 
 	hr = pStream->Release();
 	//if (FAILED(hr))
 	//{
-	//	UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSaveFile stream release failed"));
+	//	UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSaveFile stream release failed"));
 	//	return false;
 	//}
 
 	hr = pVoice->Release();
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSaveFile voice release failed"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSaveFile voice release failed"));
 		return false;
 	}
-	
+
 	::CoUninitialize();
 	pStream = nullptr;
 	pVoice = nullptr;
@@ -347,7 +326,7 @@ bool AEvaActor::TTSSaveFile(FString FileName, FString Text)
 	return true;
 }
 
-bool AEvaActor::TTSSpeakStream(FString FileName)
+bool UEvaTTSPluginBPLibrary::TTSSpeakStream(FString FileName)
 {
 	if (!TTSInit()) return false;
 
@@ -358,30 +337,30 @@ bool AEvaActor::TTSSpeakStream(FString FileName)
 	hr = SPBindToFile(*FullName, SPFILEMODE::SPFM_OPEN_READONLY, &pStream);
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeakFile creation of bind to file failed"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSpeakFile creation of bind to file failed"));
 		return false;
 	}
 
 	pVoice->SpeakStream(pStream, SPEAKFLAGS::SPF_PURGEBEFORESPEAK, &stream_number_);
-	
+
 	hr = pStream->Close();
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeakFile close stream failed"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSpeakFile close stream failed"));
 		return false;
 	}
 
 	hr = pStream->Release();
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeakFile stream release failed"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSpeakFile stream release failed"));
 		return false;
 	}
 
 	return true;
 }
 
-bool AEvaActor::TTSSpeak(FString Value, bool PreparePhonemes)
+bool UEvaTTSPluginBPLibrary::TTSSpeak(FString Value, bool PreparePhonemes)
 {
 	if (!TTSInit()) return false;
 
@@ -389,7 +368,7 @@ bool AEvaActor::TTSSpeak(FString Value, bool PreparePhonemes)
 
 	if (pVoice == NULL)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak pVoice is NULL "));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSpeak pVoice is NULL "));
 		return false;
 	}
 
@@ -404,19 +383,22 @@ bool AEvaActor::TTSSpeak(FString Value, bool PreparePhonemes)
 			SPFEI(SPEI_END_INPUT_STREAM) |
 			SPFEI(SPEI_VISEME);*/
 
+		TTSPhonemesIndexes.Empty();
+		TTSPhonemesDurations.Empty();
+
 		ULONGLONG event_mask = SPFEI(SPEI_PHONEME);
 
 		//ULONGLONG event_mask = SPFEI_ALL_TTS_EVENTS;
-		
-		hr = pVoice->SetAlertBoundary(SPEI_PHONEME);
+
 		hr = pVoice->SetInterest(event_mask, event_mask);
 
-		//AEvaActor::pTTS = this;
+		//UEvaTTSPluginBPLibrary::pTTS = this;
 
-		pVoice->SetNotifyCallbackFunction(AEvaActor::SpeechEventCallback, 0, 0);
+		pVoice->SetNotifyCallbackFunction(UEvaTTSPluginBPLibrary::SpeechEventCallback, 0, 0);
 
 	}
 
+	hr = pVoice->SetAlertBoundary(SPEI_PHONEME);
 	hr = pVoice->Speak(*Value, SPEAKFLAGS::SPF_ASYNC, &stream_number_);
 
 	if (PreparePhonemes)
@@ -426,14 +408,39 @@ bool AEvaActor::TTSSpeak(FString Value, bool PreparePhonemes)
 	}
 	if (FAILED(hr))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak: Speak method failed"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSpeak: Speak method failed"));
 		return false;
 	}
 
 	return true;
 }
 
-//bool AEvaActor::TTSSpeak(FString Value)
+bool UEvaTTSPluginBPLibrary::TTSPausibleSpeak(FString Value)
+{
+	//FString Value = "This is a long sentence to test the pause function which doesn't seemt to work.";
+	if (!TTSInit()) return false;
+
+	HRESULT hr = S_OK;
+
+	if (pVoice == NULL)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSpeak pVoice is NULL "));
+		return false;
+	}
+
+	hr = pVoice->SetAlertBoundary(SPEI_PHONEME);
+	hr = pVoice->Speak(*Value, SPEAKFLAGS::SPF_ASYNC, &stream_number_);
+
+	if (FAILED(hr))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSpeak: Speak method failed"));
+		return false;
+	}
+
+	return true;
+}
+
+//bool UEvaTTSPluginBPLibrary::TTSSpeak(FString Value)
 //{
 //	if (!TTSInit()) return false;
 //
@@ -441,7 +448,7 @@ bool AEvaActor::TTSSpeak(FString Value, bool PreparePhonemes)
 //
 //	if (pVoice == NULL)
 //	{
-//		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak pVoice is NULL "));
+//		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSpeak pVoice is NULL "));
 //		return false;
 //	}
 //
@@ -460,9 +467,9 @@ bool AEvaActor::TTSSpeak(FString Value, bool PreparePhonemes)
 //
 //	pVoice->SetInterest(event_mask, event_mask);
 //
-//	//AEvaActor::pTTS = this;
+//	//UEvaTTSPluginBPLibrary::pTTS = this;
 //
-//	pVoice->SetNotifyCallbackFunction(AEvaActor::SpeechEventCallback, 0, 0);
+//	pVoice->SetNotifyCallbackFunction(UEvaTTSPluginBPLibrary::SpeechEventCallback, 0, 0);
 //
 //	hr = pVoice->Speak(*Value, SPEAKFLAGS::SPF_ASYNC, &stream_number_);
 //
@@ -472,7 +479,7 @@ bool AEvaActor::TTSSpeak(FString Value, bool PreparePhonemes)
 //
 //	if (FAILED(hr))
 //	{
-//		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::TTSSpeak: Speak method failed"));
+//		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSpeak: Speak method failed"));
 //		return false;
 //	}
 //
@@ -480,74 +487,74 @@ bool AEvaActor::TTSSpeak(FString Value, bool PreparePhonemes)
 //}
 
 /***********************************************************************************
- *                                   JSON Methods 
+ *                                   JSON Methods
  ***********************************************************************************/
 
-UJSONHandle* AEvaActor::NewJSONObject()
+UJSONHandle* UEvaTTSPluginBPLibrary::NewJSONObject()
 {
 	UJSONHandle* JsonHandle = NewObject<UJSONHandle>();
 	JsonHandle->JSONObject = MakeShareable(new FJsonObject);
 	return JsonHandle;
 }
 
-UJSONValue* AEvaActor::NewJSONValue()
+UJSONValue* UEvaTTSPluginBPLibrary::NewJSONValue()
 {
 	UJSONValue* JsonValue = NewObject<UJSONValue>();
 	return JsonValue;
 }
 
-UJSONHandleArray* AEvaActor::NewJSONObjectArray()
+UJSONHandleArray* UEvaTTSPluginBPLibrary::NewJSONObjectArray()
 {
 	UJSONHandleArray* JSONHandleArray = NewObject<UJSONHandleArray>();
 	return JSONHandleArray;
 }
 
-void AEvaActor::AddJSONElement(UJSONHandle* JSONHandle, FString Name, FString Value)
+void UEvaTTSPluginBPLibrary::AddJSONElement(UJSONHandle* JSONHandle, FString Name, FString Value)
 {
 	FString NewName = Name.ReplaceEscapedCharWithChar();
 	JSONHandle->JSONObject->SetStringField(NewName, Value);
 }
 
-void AEvaActor::AddJSONNumericElement(UJSONHandle* JSONHandle, FString Name, float Value)
+void UEvaTTSPluginBPLibrary::AddJSONNumericElement(UJSONHandle* JSONHandle, FString Name, float Value)
 {
 	FString NewName = Name.ReplaceEscapedCharWithChar();
 	JSONHandle->JSONObject->SetNumberField(NewName, (double)Value);
 }
 
-void AEvaActor::AddJSONObject(UJSONHandle* JSONHandle, FString Name, UJSONHandle* Value)
+void UEvaTTSPluginBPLibrary::AddJSONObject(UJSONHandle* JSONHandle, FString Name, UJSONHandle* Value)
 {
 	FString NewName = Name.ReplaceEscapedCharWithChar();
 	JSONHandle->JSONObject->SetObjectField(Name, Value->JSONObject);
 }
 
-void AEvaActor::AddJSONObjectToArray(UJSONHandleArray* JSONHandleArray, UJSONHandle* Value)
+void UEvaTTSPluginBPLibrary::AddJSONObjectToArray(UJSONHandleArray* JSONHandleArray, UJSONHandle* Value)
 {
 	TSharedRef<FJsonValueObject> JsonValue = MakeShareable(new FJsonValueObject(Value->JSONObject));
 	JSONHandleArray->JSONObjectArray.Add(JsonValue);
 }
 
-void AEvaActor::AddJSONArrayToObject(UJSONHandle* JSONHandle, FString Name, UJSONHandleArray* Value)
+void UEvaTTSPluginBPLibrary::AddJSONArrayToObject(UJSONHandle* JSONHandle, FString Name, UJSONHandleArray* Value)
 {
 	JSONHandle->JSONObject->SetArrayField(Name, Value->JSONObjectArray);
 }
 
-void AEvaActor::AddJSONArrayToArray(UJSONHandleArray* JSONHandleArray, FString Name, UJSONHandleArray* Value)
+void UEvaTTSPluginBPLibrary::AddJSONArrayToArray(UJSONHandleArray* JSONHandleArray, FString Name, UJSONHandleArray* Value)
 {
 	UJSONHandle* JSONHandle = NewObject<UJSONHandle>();
-	AEvaActor::AddJSONArrayToObject(JSONHandle, Name, Value);
+	UEvaTTSPluginBPLibrary::AddJSONArrayToObject(JSONHandle, Name, Value);
 	TSharedRef<FJsonValueObject> JsonValue = MakeShareable(new FJsonValueObject(JSONHandle->JSONObject));
 	JSONHandleArray->JSONObjectArray.Add(JsonValue);
 
 }
 
-void AEvaActor::GetJSONElement(UJSONHandle* JSONHandle, FString Name, FString& Value)
+void UEvaTTSPluginBPLibrary::GetJSONElement(UJSONHandle* JSONHandle, FString Name, FString& Value)
 {
 	FString NewName = Name.ReplaceEscapedCharWithChar();
 	Value = "";
 	JSONHandle->JSONObject->TryGetStringField(NewName, Value);
 }
 
-void AEvaActor::GetJSONNumericElement(UJSONHandle* JSONHandle, FString Name, float& Value)
+void UEvaTTSPluginBPLibrary::GetJSONNumericElement(UJSONHandle* JSONHandle, FString Name, float& Value)
 {
 	FString NewName = Name.ReplaceEscapedCharWithChar();
 	Value = 0;
@@ -557,7 +564,7 @@ void AEvaActor::GetJSONNumericElement(UJSONHandle* JSONHandle, FString Name, flo
 }
 
 
-UJSONHandle* AEvaActor::GetJSONObject(UJSONHandle* JSONHandle, FString Name)
+UJSONHandle* UEvaTTSPluginBPLibrary::GetJSONObject(UJSONHandle* JSONHandle, FString Name)
 {
 	UJSONHandle* OutHandle = NewObject<UJSONHandle>();
 	FString NewName = Name.ReplaceEscapedCharWithChar();
@@ -565,7 +572,7 @@ UJSONHandle* AEvaActor::GetJSONObject(UJSONHandle* JSONHandle, FString Name)
 	return OutHandle;
 }
 
-UJSONHandleArray * AEvaActor::GetJSONArrayFromObject(UJSONHandle * JSONHandle, FString Name, int& ElementCount)
+UJSONHandleArray * UEvaTTSPluginBPLibrary::GetJSONArrayFromObject(UJSONHandle * JSONHandle, FString Name, int& ElementCount)
 {
 	UJSONHandleArray* JSONHandleArray = NewObject<UJSONHandleArray>();
 	JSONHandleArray->JSONObjectArray = JSONHandle->JSONObject->GetArrayField(Name);
@@ -573,7 +580,7 @@ UJSONHandleArray * AEvaActor::GetJSONArrayFromObject(UJSONHandle * JSONHandle, F
 	return JSONHandleArray;
 }
 
-UJSONHandleArray * AEvaActor::GetJSONArrayFromArray(UJSONHandleArray* JSONHandleArray, int Index, int& ElementCount)
+UJSONHandleArray * UEvaTTSPluginBPLibrary::GetJSONArrayFromArray(UJSONHandleArray* JSONHandleArray, int Index, int& ElementCount)
 {
 	UJSONHandleArray* InnerJSONHandleArray = NewObject<UJSONHandleArray>();
 	if (JSONHandleArray->JSONObjectArray[Index]->Type == EJson::Array)
@@ -582,7 +589,7 @@ UJSONHandleArray * AEvaActor::GetJSONArrayFromArray(UJSONHandleArray* JSONHandle
 	}
 	else
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::SerializeJSONObject: Unknown exception caught while serializing object"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::SerializeJSONObject: Unknown exception caught while serializing object"));
 		ElementCount = 0;
 		return nullptr;
 	}
@@ -590,7 +597,7 @@ UJSONHandleArray * AEvaActor::GetJSONArrayFromArray(UJSONHandleArray* JSONHandle
 	return InnerJSONHandleArray;
 }
 
-void AEvaActor::GetJSONElementMultiple(UJSONHandleArray* JSONHandleArray, int Index, FString Name, FString& Value)
+void UEvaTTSPluginBPLibrary::GetJSONElementMultiple(UJSONHandleArray* JSONHandleArray, int Index, FString Name, FString& Value)
 {
 	Value = "";
 	if (Index <= JSONHandleArray->JSONObjectArray.Num() - 1)
@@ -600,7 +607,7 @@ void AEvaActor::GetJSONElementMultiple(UJSONHandleArray* JSONHandleArray, int In
 
 }
 
-void AEvaActor::SerializeJSONObject(UJSONHandle* JSONHandle, FString & Value, bool & Success)
+void UEvaTTSPluginBPLibrary::SerializeJSONObject(UJSONHandle* JSONHandle, FString & Value, bool & Success)
 {
 	Value = "";
 	Success = false;
@@ -615,11 +622,11 @@ void AEvaActor::SerializeJSONObject(UJSONHandle* JSONHandle, FString & Value, bo
 	}
 	catch (...)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::SerializeJSONObject: Unknown exception caught while serializing object"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::SerializeJSONObject: Unknown exception caught while serializing object"));
 	}
 }
 
-void AEvaActor::SerializeJSONObjectArray(UJSONHandleArray* JSONHandleArray, FString & Value, bool & Success)
+void UEvaTTSPluginBPLibrary::SerializeJSONObjectArray(UJSONHandleArray* JSONHandleArray, FString & Value, bool & Success)
 {
 	Value = "";
 	Success = false;
@@ -635,12 +642,12 @@ void AEvaActor::SerializeJSONObjectArray(UJSONHandleArray* JSONHandleArray, FStr
 	}
 	catch (...)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::SerializeJSONObject: Unknown exception caught while serializing object"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::SerializeJSONObject: Unknown exception caught while serializing object"));
 	}
 }
 
 
-UJSONHandle* AEvaActor::GetJSONObjectFromArray(UJSONHandleArray* JSONHandleArray, int Index, bool& Success)
+UJSONHandle* UEvaTTSPluginBPLibrary::GetJSONObjectFromArray(UJSONHandleArray* JSONHandleArray, int Index, bool& Success)
 {
 	UJSONHandle* JSONHandle = NewObject<UJSONHandle>();
 	if (Index <= JSONHandleArray->JSONObjectArray.Num())
@@ -654,41 +661,41 @@ UJSONHandle* AEvaActor::GetJSONObjectFromArray(UJSONHandleArray* JSONHandleArray
 }
 
 
-void AEvaActor::GetJSONObjectType(UJSONHandleArray* JSONHandleArray, int Index, EJsonType& JsonType)
+void UEvaTTSPluginBPLibrary::GetJSONObjectType(UJSONHandleArray* JSONHandleArray, int Index, EJsonType& JsonType)
 {
-	EJson EType = JSONHandleArray->JSONObjectArray[Index]->Type;		
+	EJson EType = JSONHandleArray->JSONObjectArray[Index]->Type;
 	EJsonType NewEnum = static_cast<EJsonType>(EType);
 	JsonType = NewEnum;
 }
 
-void AEvaActor::GetJSONValueType(UJSONValue * JSONValue, EJsonType & JsonType)
+void UEvaTTSPluginBPLibrary::GetJSONValueType(UJSONValue * JSONValue, EJsonType & JsonType)
 {
 	EJson EType = JSONValue->JSONValue->Type;
 	EJsonType NewEnum = static_cast<EJsonType>(EType);
 	JsonType = NewEnum;
 }
 
-UJSONHandle* AEvaActor::JSONValueAsObject(UJSONValue * JSONValue)
+UJSONHandle* UEvaTTSPluginBPLibrary::JSONValueAsObject(UJSONValue * JSONValue)
 {
 	UJSONHandle* JSONHandle = NewObject<UJSONHandle>();
 	JSONHandle->JSONObject = JSONValue->JSONValue->AsObject();
 	return JSONHandle;
 }
 
-UJSONHandleArray* AEvaActor::JSONValueAsArray(UJSONValue * JSONValue)
+UJSONHandleArray* UEvaTTSPluginBPLibrary::JSONValueAsArray(UJSONValue * JSONValue)
 {
-	UJSONHandleArray* JSONHandleArray = AEvaActor::NewJSONObjectArray();
+	UJSONHandleArray* JSONHandleArray = UEvaTTSPluginBPLibrary::NewJSONObjectArray();
 	JSONHandleArray->JSONObjectArray = JSONValue->JSONValue->AsArray();
 	return JSONHandleArray;
 }
 
-void AEvaActor::GetJSONArrayHandleAsArray(UJSONHandleArray * JSONHandleArray, TArray<UJSONValue*>& JSONValueArray, int & ElementCount)
+void UEvaTTSPluginBPLibrary::GetJSONArrayHandleAsArray(UJSONHandleArray * JSONHandleArray, TArray<UJSONValue*>& JSONValueArray, int & ElementCount)
 {
 	JSONValueArray.Empty();
 
 	for (int x = 0; x < JSONHandleArray->JSONObjectArray.Num(); x++)
 	{
-		UJSONValue* JSONValue = AEvaActor::NewJSONValue();
+		UJSONValue* JSONValue = UEvaTTSPluginBPLibrary::NewJSONValue();
 		JSONValue->JSONValue = JSONHandleArray->JSONObjectArray[x];
 
 		JSONValueArray.Add(JSONValue);
@@ -698,7 +705,7 @@ void AEvaActor::GetJSONArrayHandleAsArray(UJSONHandleArray * JSONHandleArray, TA
 }
 
 
-void AEvaActor::GetJSONObjectKeysAndTypes(UJSONHandle* JSONHandle, TMap<FString, EJsonType>& KeysAndTypes, int& ElementCount)
+void UEvaTTSPluginBPLibrary::GetJSONObjectKeysAndTypes(UJSONHandle* JSONHandle, TMap<FString, EJsonType>& KeysAndTypes, int& ElementCount)
 {
 	KeysAndTypes.Empty();
 	ElementCount = 0;
@@ -713,16 +720,16 @@ void AEvaActor::GetJSONObjectKeysAndTypes(UJSONHandle* JSONHandle, TMap<FString,
 	ElementCount = KeysAndTypes.Num();
 }
 
-void AEvaActor::GetJSONArrayTypesAndValues(UJSONHandleArray* JSONHandleArray, TMap<EJsonType, UJSONValue*>& TypesAndValues, int& ElementCount)
+void UEvaTTSPluginBPLibrary::GetJSONArrayTypesAndValues(UJSONHandleArray* JSONHandleArray, TMap<EJsonType, UJSONValue*>& TypesAndValues, int& ElementCount)
 {
 	TypesAndValues.Empty();
 	ElementCount = 0;
 
 	for (int x = 0; x < JSONHandleArray->JSONObjectArray.Num(); x++)
 	{
-		UJSONValue* JSONValue = AEvaActor::NewJSONValue();
-		JSONValue->JSONValue =JSONHandleArray->JSONObjectArray[x];
-		
+		UJSONValue* JSONValue = UEvaTTSPluginBPLibrary::NewJSONValue();
+		JSONValue->JSONValue = JSONHandleArray->JSONObjectArray[x];
+
 		EJson EType = JSONHandleArray->JSONObjectArray[x]->Type;
 		EJsonType NewEnum = static_cast<EJsonType>(EType);
 
@@ -732,7 +739,7 @@ void AEvaActor::GetJSONArrayTypesAndValues(UJSONHandleArray* JSONHandleArray, TM
 	ElementCount = TypesAndValues.Num();
 }
 
-UJSONHandleArray* AEvaActor::ParseFile(FString FileName, int& ElementCount, bool& Success)
+UJSONHandleArray* UEvaTTSPluginBPLibrary::ParseFile(FString FileName, int& ElementCount, bool& Success)
 {
 	Success = false;
 	try
@@ -743,40 +750,41 @@ UJSONHandleArray* AEvaActor::ParseFile(FString FileName, int& ElementCount, bool
 		if (FFileHelper::LoadFileToString(FileContents, *projectDir, FFileHelper::EHashOptions::None))
 		{
 			FString JSONArrayString = "[" + FileContents + "]";
-			return AEvaActor::ParseMultiple(JSONArrayString, ElementCount, Success);
+			UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::ParseFile: Contents: %s"), *JSONArrayString);
+			return UEvaTTSPluginBPLibrary::ParseMultiple(JSONArrayString, ElementCount, Success);
 		}
 	}
 	catch (...)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::ParseFile: Unknown exception caught while parsing string"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::ParseFile: Unknown exception caught while parsing string"));
 	}
 	return nullptr;
 }
 
-bool AEvaActor::JSONArrayToFile(UJSONHandleArray * JSONHandleArray, FString FileName)
+bool UEvaTTSPluginBPLibrary::JSONArrayToFile(UJSONHandleArray * JSONHandleArray, FString FileName)
 {
 	bool Success = false;
 	try
 	{
 		FString Value;
 
-		AEvaActor::SerializeJSONObjectArray(JSONHandleArray, Value, Success);
+		UEvaTTSPluginBPLibrary::SerializeJSONObjectArray(JSONHandleArray, Value, Success);
 		if (Success)
 		{
 			FString projectDir = FPaths::ProjectContentDir() + FileName;
 
 			return FFileHelper::SaveStringToFile(Value, *projectDir);
 		}
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::JSONArrayToFile: SerializeJSONObjectArray failed."));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::JSONArrayToFile: SerializeJSONObjectArray failed."));
 	}
 	catch (...)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::JSONArrayToFile: Unknown exception caught while parsing string"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::JSONArrayToFile: Unknown exception caught while parsing string"));
 	}
 	return false;
 }
 
-UJSONHandleArray* AEvaActor::ParseMultiple(FString JSONString, int & ElementCount, bool & Success)
+UJSONHandleArray* UEvaTTSPluginBPLibrary::ParseMultiple(FString JSONString, int & ElementCount, bool & Success)
 {
 	Success = false;
 	ElementCount = 0;
@@ -792,12 +800,12 @@ UJSONHandleArray* AEvaActor::ParseMultiple(FString JSONString, int & ElementCoun
 	}
 	catch (...)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::ParseMultiple: Unknown exception caught while parsing string"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::ParseMultiple: Unknown exception caught while parsing string"));
 	}
 	return JSONHandleArray;
 }
 
-UJSONHandle* AEvaActor::JSONParseStringToObject(FString JSONString, bool& Success)
+UJSONHandle* UEvaTTSPluginBPLibrary::JSONParseStringToObject(FString JSONString, bool& Success)
 {
 	UJSONHandle* JSONHandle = NewJSONObject();
 	Success = false;
@@ -812,12 +820,12 @@ UJSONHandle* AEvaActor::JSONParseStringToObject(FString JSONString, bool& Succes
 	}
 	catch (...)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::ParseString: Unknown exception caught while parsing string"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::ParseString: Unknown exception caught while parsing string"));
 	}
 	return nullptr;
 }
 
-UJSONValue* AEvaActor::JSONParseStringToValue(FString JSONString, bool& Success)
+UJSONValue* UEvaTTSPluginBPLibrary::JSONParseStringToValue(FString JSONString, bool& Success)
 {
 	UJSONValue* JSONValue = NewJSONValue();
 	Success = false;
@@ -832,40 +840,40 @@ UJSONValue* AEvaActor::JSONParseStringToValue(FString JSONString, bool& Success)
 	}
 	catch (...)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::ParseString: Unknown exception caught while parsing string"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::ParseString: Unknown exception caught while parsing string"));
 	}
 	return nullptr;
 }
 
 /***********************************Print JSON Object*************************************/
-void AEvaActor::PrintJSONArray(UJSONHandleArray * HandleArray)
+void UEvaTTSPluginBPLibrary::PrintJSONArray(UJSONHandleArray * HandleArray)
 {
-	AEvaActor::PrintJSONArray(HandleArray->JSONObjectArray, 0);
+	UEvaTTSPluginBPLibrary::PrintJSONArray(HandleArray->JSONObjectArray, 0);
 }
 
-void AEvaActor::PrintJSONArray(TArray<TSharedPtr<FJsonValue>> JSONValueArray, int level)
+void UEvaTTSPluginBPLibrary::PrintJSONArray(TArray<TSharedPtr<FJsonValue>> JSONValueArray, int level)
 {
 
 	if (level == 0)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::PrintJSONArray: Starting"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::PrintJSONArray: Starting"));
 	}
 	else
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::PrintJSONArray: Nested element:"));
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::PrintJSONArray: Nested element:"));
 	}
 
 	int Num = JSONValueArray.Num();
-	UE_LOG(LogTemp, Warning, TEXT("AEvaActor::Number of elements: %d"), Num);
+	UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::Number of elements: %d"), Num);
 
 	for (int x = 0; x < Num; x++)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::Printing element number: %d"), x);
-		AEvaActor::PrintJSONValue(JSONValueArray[x], level);
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::Printing element number: %d"), x);
+		UEvaTTSPluginBPLibrary::PrintJSONValue(JSONValueArray[x], level);
 	}
 }
 
-void AEvaActor::PrintJSONValue(TSharedPtr<FJsonValue> Value, int level)
+void UEvaTTSPluginBPLibrary::PrintJSONValue(TSharedPtr<FJsonValue> Value, int level)
 {
 	TArray<TSharedPtr<FJsonValue>> ChildArray;
 	FString JsonTypeString;
@@ -874,101 +882,57 @@ void AEvaActor::PrintJSONValue(TSharedPtr<FJsonValue> Value, int level)
 	{
 	case EJson::None:
 		JsonTypeString = "None";
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::Element type: %s."), *JsonTypeString);
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::Element type: %s."), *JsonTypeString);
 		break;
 
 	case EJson::Null:
 		JsonTypeString = "Null";
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::Element type: %s."), *JsonTypeString);
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::Element type: %s."), *JsonTypeString);
 		break;
 
 	case EJson::String:
 		JsonTypeString = "String";
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::Element type: %s. Element value: %s"), *JsonTypeString, *Value->AsString());
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::Element type: %s. Element value: %s"), *JsonTypeString, *Value->AsString());
 		break;
 
 	case EJson::Number:
 		JsonTypeString = "Number";
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::Element value: %d"), *JsonTypeString, Value->AsNumber());
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::Element value: %d"), *JsonTypeString, Value->AsNumber());
 		break;
 
 	case EJson::Boolean:
 		JsonTypeString = "Boolean";
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::Element value: %d"), *JsonTypeString, Value->AsBool() ? "true" : "false");
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::Element value: %d"), *JsonTypeString, Value->AsBool() ? "true" : "false");
 		break;
 
 	case EJson::Array:
 		JsonTypeString = "Array";
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::Element type: %s."), *JsonTypeString);
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::Element type: %s."), *JsonTypeString);
 		ChildArray = Value->AsArray();
-		AEvaActor::PrintJSONArray(ChildArray, level++);
+		UEvaTTSPluginBPLibrary::PrintJSONArray(ChildArray, level++);
 		break;
 
 	case EJson::Object:
 		JsonTypeString = "Object";
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::Element type: %s."), *JsonTypeString);
-		AEvaActor::PrintJSONObject(Value->AsObject(), level++);
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::Element type: %s."), *JsonTypeString);
+		UEvaTTSPluginBPLibrary::PrintJSONObject(Value->AsObject(), level++);
 		break;
 
 	default:
 		JsonTypeString = "Undefined";
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::Element type: %s."), *JsonTypeString);
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::Element type: %s."), *JsonTypeString);
 	}
 }
 
-void AEvaActor::PrintJSONObject(TSharedPtr<FJsonObject> JSONObject, int level)
+void UEvaTTSPluginBPLibrary::PrintJSONObject(TSharedPtr<FJsonObject> JSONObject, int level)
 {
 	TArray<FString> Keys;
 	JSONObject->Values.GenerateKeyArray(Keys);
 
 	for (const FString& Key : Keys)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AEvaActor::PrintJSONObject: Processing Key: %s"), *Key);
+		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::PrintJSONObject: Processing Key: %s"), *Key);
 		const TSharedPtr<FJsonValue>* Field = JSONObject->Values.Find(Key);
-		AEvaActor::PrintJSONValue(*Field, level);
+		UEvaTTSPluginBPLibrary::PrintJSONValue(*Field, level);
 	}
 }
-
-/******************************** End of Print *************************************/
-
-//void AEvaActor::AssetManagerLoadAsset(FString Name, FString Type)
-//{
-//	// Name: Temp
-//	// Type: SoundWave
-//	// Package Path: /Game 
-//	// Package Name: /Game/Temp 
-//	// Object Path: /Game/Temp.Temp 
-//
-//  SoundWave'/Game/Eva-TTS-SpeechSynthesisIntroduction.Eva-TTS-SpeechSynthesisIntroduction'
-
-
-//	FString PackagePath = "/Game";
-//	FString PackageName = PackagePath + "/" + Name;
-//	FString ObjectPath = PackageName + "." + Name;	
-//	FString AssetName = Type + "'" + ObjectPath + "'";
-//
-//	UAssetManager& AssetManager = UAssetManager::Get();
-//
-//	//const FPrimaryAssetId AssetId = FPrimaryAssetId(FName(*Type), FName(*AssetName));
-//	//const FAssetData AssetData = FAssetData(FName(*PackageName), FName(*PackagePath), FName(*AssetName), FName(*Type));
-//
-//	FAssetBundleData AssetBundle;
-//	AssetBundle.SetFromAssetData(FAssetData(FName(*PackageName), FName(*PackagePath), FName(*AssetName), FName(*Type)));
-//
-//	FSoftObjectPath SoftObjectPath(ObjectPath);
-//
-//	// Register a dynamic Asset 
-//	AssetManager.AddDynamicAsset(FPrimaryAssetId(FName(*Type), FName(*AssetName)), SoftObjectPath, AssetBundle);
-//
-//	TArray<FName> LoadBundle;
-//	LoadBundle.Add(FName(*AssetName));
-//
-//	// Start preloading
-//	AssetManager.LoadPrimaryAsset(FPrimaryAssetId(FName(*Type), FName(*AssetName)), LoadBundle);
-//
-//}
-
-
-
-
-

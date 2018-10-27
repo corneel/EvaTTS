@@ -1,220 +1,343 @@
 [
-	{
-		"Name": "This is the EVA TTS, Speech Synthesis product",
-		"Text": "This is the EVA TTS, Speech Synthesis product",
-		"PhonemeArray": [
-			{
-				"Phoneme": "_",
-				"Duration": 0.060752842575311661
-			},
-			{
-				"Phoneme": "DH",
-				"Duration": 0.065999999642372131
-			},
-			{
-				"Phoneme": "IH",
-				"Duration": 0.075000002980232239
-			},
-			{
-				"Phoneme": "S",
-				"Duration": 0.097999997437000275
-			},
-			{
-				"Phoneme": "IH",
-				"Duration": 0.056000001728534698
-			},
-			{
-				"Phoneme": "Z",
-				"Duration": 0.061000000685453415
-			},
-			{
-				"Phoneme": "DH",
-				"Duration": 0.048000000417232513
-			},
-			{
-				"Phoneme": "IH",
-				"Duration": 0.019999999552965164
-			},
-			{
-				"Phoneme": "IY",
-				"Duration": 0.084848202764987946
-			},
-			{
-				"Phoneme": "V",
-				"Duration": 0.05299999937415123
-			},
-			{
-				"Phoneme": "AX",
-				"Duration": 0.16757898032665253
-			},
-			{
-				"Phoneme": "T",
-				"Duration": 0.086999997496604919
-			},
-			{
-				"Phoneme": "IY",
-				"Duration": 0.075000002980232239
-			},
-			{
-				"Phoneme": "T",
-				"Duration": 0.083999998867511749
-			},
-			{
-				"Phoneme": "IY",
-				"Duration": 0.090000003576278687
-			},
-			{
-				"Phoneme": "EH",
-				"Duration": 0.087106503546237946
-			},
-			{
-				"Phoneme": "S",
-				"Duration": 0.10775261372327805
-			},
-			{
-				"Phoneme": "_",
-				"Duration": 0.19550523161888123
-			},
-			{
-				"Phoneme": "S",
-				"Duration": 0.10300000011920929
-			},
-			{
-				"Phoneme": "P",
-				"Duration": 0.056000001728534698
-			},
-			{
-				"Phoneme": "IY",
-				"Duration": 0.056381888687610626
-			},
-			{
-				"Phoneme": "CH",
-				"Duration": 0.098657257854938507
-			},
-			{
-				"Phoneme": "S",
-				"Duration": 0.078000001609325409
-			},
-			{
-				"Phoneme": "IH",
-				"Duration": 0.05000000074505806
-			},
-			{
-				"Phoneme": "N",
-				"Duration": 0.05000000074505806
-			},
-			{
-				"Phoneme": "TH",
-				"Duration": 0.054000001400709152
-			},
-			{
-				"Phoneme": "AX",
-				"Duration": 0.05000000074505806
-			},
-			{
-				"Phoneme": "S",
-				"Duration": 0.089437872171401978
-			},
-			{
-				"Phoneme": "IH",
-				"Duration": 0.070000000298023224
-			},
-			{
-				"Phoneme": "S",
-				"Duration": 0.071999996900558472
-			},
-			{
-				"Phoneme": "P",
-				"Duration": 0.035286523401737213
-			},
-			{
-				"Phoneme": "R",
-				"Duration": 0.052000001072883606
-			},
-			{
-				"Phoneme": "AA",
-				"Duration": 0.069971553981304169
-			},
-			{
-				"Phoneme": "D",
-				"Duration": 0.041999999433755875
-			},
-			{
-				"Phoneme": "AX",
-				"Duration": 0.048449251800775528
-			},
-			{
-				"Phoneme": "K",
-				"Duration": 0.062095358967781067
-			},
-			{
-				"Phoneme": "T",
-				"Duration": 0.077752850949764252
-			},
-			{
-				"Phoneme": "_",
-				"Duration": 0.25400000810623169
-			}
-		],
-		"Asset": "Eva-TTS-SpeechSynthesisIntroduction"
-	},
   {
-    "Name": "ThisisEva",
-    "Text": "This is Eva",
+    "Name": "This is the EVA TTS, Speech Synthesis product",
+    "Text": "This is the EVA TTS, Speech Synthesis product",
     "PhonemeArray": [
       {
-        "Phoneme": ".",
-        "Duration": 0.13980716466903687
+        "Phoneme": "_",
+        "Duration": 0.060752842575311661
       },
       {
         "Phoneme": "DH",
-        "Duration": 0.041000001132488251
+        "Duration": 0.065999999642372131
       },
       {
         "Phoneme": "IH",
-        "Duration": 0.03010844811797142
+        "Duration": 0.075000002980232239
       },
       {
         "Phoneme": "S",
-        "Duration": 0.037888139486312866
-      },
-      {
-        "Phoneme": ".",
-        "Duration": 0.065492376685142517
+        "Duration": 0.097999997437000275
       },
       {
         "Phoneme": "IH",
-        "Duration": 0.037110187113285065
+        "Duration": 0.056000001728534698
       },
       {
         "Phoneme": "Z",
-        "Duration": 0.04332767054438591
+        "Duration": 0.061000000685453415
       },
       {
-        "Phoneme": ".",
-        "Duration": 0.082435436546802521
+        "Phoneme": "DH",
+        "Duration": 0.048000000417232513
       },
       {
-        "Phoneme": "EY",
-        "Duration": 0.098559282720088959
-      },
-      {
-        "Phoneme": "V",
-        "Duration": 0.083485409617424011
-      },
-      {
-        "Phoneme": "AH",
-        "Duration": 0.10241939127445221
-      },
-      {
-        "Phoneme": ".",
+        "Phoneme": "IH",
         "Duration": 0.019999999552965164
       },
       {
-        "Phoneme": "!",
-        "Duration": 0.038671243935823441
+        "Phoneme": "IY",
+        "Duration": 0.084848202764987946
+      },
+      {
+        "Phoneme": "V",
+        "Duration": 0.05299999937415123
+      },
+      {
+        "Phoneme": "AX",
+        "Duration": 0.16757898032665253
+      },
+      {
+        "Phoneme": "T",
+        "Duration": 0.086999997496604919
+      },
+      {
+        "Phoneme": "IY",
+        "Duration": 0.075000002980232239
+      },
+      {
+        "Phoneme": "T",
+        "Duration": 0.083999998867511749
+      },
+      {
+        "Phoneme": "IY",
+        "Duration": 0.090000003576278687
+      },
+      {
+        "Phoneme": "EH",
+        "Duration": 0.087106503546237946
+      },
+      {
+        "Phoneme": "S",
+        "Duration": 0.10775261372327805
+      },
+      {
+        "Phoneme": "_",
+        "Duration": 0.19550523161888123
+      },
+      {
+        "Phoneme": "S",
+        "Duration": 0.10300000011920929
+      },
+      {
+        "Phoneme": "P",
+        "Duration": 0.056000001728534698
+      },
+      {
+        "Phoneme": "IY",
+        "Duration": 0.056381888687610626
+      },
+      {
+        "Phoneme": "CH",
+        "Duration": 0.098657257854938507
+      },
+      {
+        "Phoneme": "S",
+        "Duration": 0.078000001609325409
+      },
+      {
+        "Phoneme": "IH",
+        "Duration": 0.05000000074505806
+      },
+      {
+        "Phoneme": "N",
+        "Duration": 0.05000000074505806
+      },
+      {
+        "Phoneme": "TH",
+        "Duration": 0.054000001400709152
+      },
+      {
+        "Phoneme": "AX",
+        "Duration": 0.05000000074505806
+      },
+      {
+        "Phoneme": "S",
+        "Duration": 0.089437872171401978
+      },
+      {
+        "Phoneme": "IH",
+        "Duration": 0.070000000298023224
+      },
+      {
+        "Phoneme": "S",
+        "Duration": 0.071999996900558472
+      },
+      {
+        "Phoneme": "P",
+        "Duration": 0.035286523401737213
+      },
+      {
+        "Phoneme": "R",
+        "Duration": 0.052000001072883606
+      },
+      {
+        "Phoneme": "AA",
+        "Duration": 0.069971553981304169
+      },
+      {
+        "Phoneme": "D",
+        "Duration": 0.041999999433755875
+      },
+      {
+        "Phoneme": "AX",
+        "Duration": 0.048449251800775528
+      },
+      {
+        "Phoneme": "K",
+        "Duration": 0.062095358967781067
+      },
+      {
+        "Phoneme": "T",
+        "Duration": 0.077752850949764252
+      },
+      {
+        "Phoneme": "_",
+        "Duration": 0.25400000810623169
       }
     ],
-    "Asset": "This_is_Eva"
+    "Asset": "Eva-TTS-SpeechSynthesisIntroduction"
+  },
+  {
+    "Name": "THIS-IS-EV10252018164820",
+    "Text": "This is Eva. I am ready to assist you.",
+    "PhonemeArray": [
+      {
+        "Phoneme": "_",
+        "Duration": 0.082999996840953827
+      },
+      {
+        "Phoneme": "DH",
+        "Duration": 0.065999999642372131
+      },
+      {
+        "Phoneme": "IH",
+        "Duration": 0.075000002980232239
+      },
+      {
+        "Phoneme": "S",
+        "Duration": 0.093000002205371857
+      },
+      {
+        "Phoneme": "IH",
+        "Duration": 0.061000000685453415
+      },
+      {
+        "Phoneme": "Z",
+        "Duration": 0.083999998867511749
+      },
+      {
+        "Phoneme": "IY",
+        "Duration": 0.13500000536441803
+      },
+      {
+        "Phoneme": "V",
+        "Duration": 0.059999998658895493
+      },
+      {
+        "Phoneme": "AX",
+        "Duration": 0.18000000715255737
+      },
+      {
+        "Phoneme": "_",
+        "Duration": 0.25999999046325684
+      },
+      {
+        "Phoneme": "_",
+        "Duration": 0.085000000894069672
+      },
+      {
+        "Phoneme": "AY",
+        "Duration": 0.12399999797344208
+      },
+      {
+        "Phoneme": "AE",
+        "Duration": 0.059999998658895493
+      },
+      {
+        "Phoneme": "M",
+        "Duration": 0.079000003635883331
+      },
+      {
+        "Phoneme": "R",
+        "Duration": 0.061999998986721039
+      },
+      {
+        "Phoneme": "EH",
+        "Duration": 0.067000001668930054
+      },
+      {
+        "Phoneme": "D",
+        "Duration": 0.039000000804662704
+      },
+      {
+        "Phoneme": "IY",
+        "Duration": 0.092000000178813934
+      },
+      {
+        "Phoneme": "T",
+        "Duration": 0.078000001609325409
+      },
+      {
+        "Phoneme": "UH",
+        "Duration": 0.064999997615814209
+      },
+      {
+        "Phoneme": "AX",
+        "Duration": 0.064999997615814209
+      },
+      {
+        "Phoneme": "S",
+        "Duration": 0.10999999940395355
+      },
+      {
+        "Phoneme": "IH",
+        "Duration": 0.068999998271465302
+      },
+      {
+        "Phoneme": "S",
+        "Duration": 0.076999999582767487
+      },
+      {
+        "Phoneme": "T",
+        "Duration": 0.054999999701976776
+      },
+      {
+        "Phoneme": "Y",
+        "Duration": 0.086999997496604919
+      },
+      {
+        "Phoneme": "UW",
+        "Duration": 0.17000000178813934
+      },
+      {
+        "Phoneme": "_",
+        "Duration": 0.25699999928474426
+      }
+    ],
+    "Asset": "TTS-THIS-IS-EV10252018164820"
+  },
+  {
+    "Name": "I-CAN-SAY-10252018171654",
+    "Text": "I can say anything.",
+    "PhonemeArray": [
+      {
+        "Phoneme": "_",
+        "Duration": 0.085000000894069672
+      },
+      {
+        "Phoneme": "AY",
+        "Duration": 0.093999996781349182
+      },
+      {
+        "Phoneme": "K",
+        "Duration": 0.071000002324581146
+      },
+      {
+        "Phoneme": "AE",
+        "Duration": 0.035000000149011612
+      },
+      {
+        "Phoneme": "N",
+        "Duration": 0.061999998986721039
+      },
+      {
+        "Phoneme": "S",
+        "Duration": 0.10999999940395355
+      },
+      {
+        "Phoneme": "EY",
+        "Duration": 0.15999999642372131
+      },
+      {
+        "Phoneme": "EH",
+        "Duration": 0.10700000077486038
+      },
+      {
+        "Phoneme": "N",
+        "Duration": 0.041999999433755875
+      },
+      {
+        "Phoneme": "IY",
+        "Duration": 0.070000000298023224
+      },
+      {
+        "Phoneme": "TH",
+        "Duration": 0.087999999523162842
+      },
+      {
+        "Phoneme": "IH",
+        "Duration": 0.11100000143051147
+      },
+      {
+        "Phoneme": "NG",
+        "Duration": 0.11999999731779099
+      },
+      {
+        "Phoneme": "_",
+        "Duration": 0.25400000810623169
+      }
+    ],
+    "Asset": "TTS-I-CAN-SAY-10252018171654"
   }
 ]

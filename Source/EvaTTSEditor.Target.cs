@@ -11,6 +11,7 @@ public class EvaTTSEditorTarget : TargetRules
 
         ExtraModuleNames.AddRange( new string[] {
            "EvaTTS",
+           "EvaTTSPlugin",
             "Json",
             "JsonUtilities"
         } );
