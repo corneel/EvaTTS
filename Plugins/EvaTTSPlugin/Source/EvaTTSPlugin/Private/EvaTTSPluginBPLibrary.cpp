@@ -271,7 +271,7 @@ bool UEvaTTSPluginBPLibrary::TTSSaveFile(FString FileName, FString Text)
 
 	FString FullName = FPaths::ProjectContentDir() + FileName;
 
-	hr = SPBindToFile(*FullName, SPFILEMODE::SPFM_CREATE_ALWAYS, &pStream, &Format.FormatId(), Format.WaveFormatExPtr());
+	hr = SPBindToFile(*FileName, SPFILEMODE::SPFM_CREATE_ALWAYS, &pStream, &Format.FormatId(), Format.WaveFormatExPtr());
 	if (FAILED(hr))
 	{
 		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::TTSSaveFile creation of bind to file failed"));
@@ -773,7 +773,7 @@ bool UEvaTTSPluginBPLibrary::JSONArrayToFile(UJSONHandleArray * JSONHandleArray,
 		{
 			FString projectDir = FPaths::ProjectContentDir() + FileName;
 
-			return FFileHelper::SaveStringToFile(Value, *projectDir);
+			return FFileHelper::SaveStringToFile(Value, *FileName);
 		}
 		UE_LOG(LogTemp, Warning, TEXT("UEvaTTSPluginBPLibrary::JSONArrayToFile: SerializeJSONObjectArray failed."));
 	}

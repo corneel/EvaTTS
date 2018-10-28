@@ -2,3 +2,4 @@
 #include "C:\Users\corne\Documents\Unreal Projects\EvaTTS\Plugins\EvaTTSPlugin\Source\EvaTTSPlugin\Private\EvaTTSPlugin.cpp"
 #include "C:\Users\corne\Documents\Unreal Projects\EvaTTS\Plugins\EvaTTSPlugin\Source\EvaTTSPlugin\Private\EvaTTSPluginActor.cpp"
 #include "C:\Users\corne\Documents\Unreal Projects\EvaTTS\Plugins\EvaTTSPlugin\Source\EvaTTSPlugin\Private\EvaTTSPluginActorComponent.cpp"
+#include "C:\Users\corne\Documents\Unreal Projects\EvaTTS\Plugins\EvaTTSPlugin\Source\EvaTTSPlugin\Private\EvaTTSPluginBPLibrary.cpp"
