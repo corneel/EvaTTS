@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeEvaTTSPluginActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEvaTTSPluginActor, 2623519345);
+	IMPLEMENT_CLASS(AEvaTTSPluginActor, 595062153);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AEvaTTSPluginActor(Z_Construct_UClass_AEvaTTSPluginActor, &AEvaTTSPluginActor::StaticClass, TEXT("/Script/EvaTTSPlugin"), TEXT("AEvaTTSPluginActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AEvaTTSPluginActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -45,7 +45,7 @@ private: \
 	static void StaticRegisterNativesUEvaTTSPluginActorComponent(); \
 	friend struct Z_Construct_UClass_UEvaTTSPluginActorComponent_Statics; \
 public: \
-	DECLARE_CLASS(UEvaTTSPluginActorComponent, UActorComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/EvaTTSPlugin"), NO_API) \
+	DECLARE_CLASS(UEvaTTSPluginActorComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/EvaTTSPlugin"), NO_API) \
 	DECLARE_SERIALIZER(UEvaTTSPluginActorComponent)
 
 
@@ -54,7 +54,7 @@ private: \
 	static void StaticRegisterNativesUEvaTTSPluginActorComponent(); \
 	friend struct Z_Construct_UClass_UEvaTTSPluginActorComponent_Statics; \
 public: \
-	DECLARE_CLASS(UEvaTTSPluginActorComponent, UActorComponent, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/EvaTTSPlugin"), NO_API) \
+	DECLARE_CLASS(UEvaTTSPluginActorComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/EvaTTSPlugin"), NO_API) \
 	DECLARE_SERIALIZER(UEvaTTSPluginActorComponent)
 
 

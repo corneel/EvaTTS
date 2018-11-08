@@ -105,10 +105,10 @@ void EmptyLinkFunctionForGeneratedCodeEvaTTSPluginActorComponent() {}
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UEvaTTSPluginActorComponent_Statics::ClassParams = {
 		&UEvaTTSPluginActorComponent::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x00B000A0u,
+		0x00B000A4u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
 		nullptr, 0,
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
 		METADATA_PARAMS(Z_Construct_UClass_UEvaTTSPluginActorComponent_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UEvaTTSPluginActorComponent_Statics::Class_MetaDataParams))
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeEvaTTSPluginActorComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEvaTTSPluginActorComponent, 2023974410);
+	IMPLEMENT_CLASS(UEvaTTSPluginActorComponent, 2984683848);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UEvaTTSPluginActorComponent(Z_Construct_UClass_UEvaTTSPluginActorComponent, &UEvaTTSPluginActorComponent::StaticClass, TEXT("/Script/EvaTTSPlugin"), TEXT("UEvaTTSPluginActorComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UEvaTTSPluginActorComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -229,12 +229,9 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
-/FI"C:\Users\corne\Documents\Unreal Projects\EvaTTS\Intermediate\Build\Win64\EvaTTS\Shipping\Engine\SharedPCH.Engine.Exceptions.h"
-/Yu"C:\Users\corne\Documents\Unreal Projects\EvaTTS\Intermediate\Build\Win64\EvaTTS\Shipping\Engine\SharedPCH.Engine.Exceptions.h"
-/Fp"C:\Users\corne\Documents\Unreal Projects\EvaTTS\Intermediate\Build\Win64\EvaTTS\Shipping\Engine\SharedPCH.Engine.Exceptions.h.pch"
-"C:\Users\corne\Documents\Unreal Projects\EvaTTS\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4\Shipping\EvaTTSPlugin\Module.EvaTTSPlugin.gen.cpp"
-/FI"C:\Users\corne\Documents\Unreal Projects\EvaTTS\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4\Shipping\EvaTTSPlugin\Definitions.EvaTTSPlugin.h"
-/Fo"C:\Users\corne\Documents\Unreal Projects\EvaTTS\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4\Shipping\EvaTTSPlugin\Module.EvaTTSPlugin.gen.cpp.obj"
+"C:\Users\corne\Documents\Unreal Projects\EvaTTS\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4\Inc\EvaTTSPlugin\EvaTTSPluginActorComponent.gen.cpp"
+/FI"C:\Users\corne\Documents\Unreal Projects\EvaTTS\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4\Shipping\EvaTTSPlugin\Definitions.Adaptive.h"
+/Fo"C:\Users\corne\Documents\Unreal Projects\EvaTTS\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4\Shipping\EvaTTSPlugin\EvaTTSPluginActorComponent.gen.cpp.obj"
 /TP
 /GR-
 /W4
