@@ -1,0 +1,26 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "4.20.5",
+  "FriendlyName": "EvaTTSPlugin",
+  "Description": "The Eva-TTS Speech Synthesis product provides Text-to-Speech capabilities to Unreal Engine and makes lip syncing of existing or new wave files easy.",
+  "Category": "Animation",
+  "CreatedBy": "Corneel Booysen",
+  "CreatedByURL": "https://augmentedenterprise.com",
+  "DocsURL": "https://github.com/corneel/Eva-TTS/wiki",
+  "MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/3DF1C53741600D6668A3D795A9C1090E",
+  "SupportURL": "https://github.com/corneel/Eva-TTS/wiki",
+  "CanContainContent": true,
+  "IsBetaVersion": false,
+  "Installed": false,
+  "Modules": [
+    {
+      "Name": "EvaTTSPlugin",
+      "Type": "Runtime",
+      "LoadingPhase": "PreDefault",
+      "WhitelistPlatforms": [
+        "Win64"
+      ]
+    }
+  ]
+}
