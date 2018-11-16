@@ -1,7 +1,7 @@
 {
   "FileVersion": 3,
   "Version": 1,
-  "VersionName": "4.20.5",
+  "VersionName": "4.21.0",
   "FriendlyName": "EvaTTSPlugin",
   "Description": "The Eva-TTS Speech Synthesis product provides Text-to-Speech capabilities to Unreal Engine and makes lip syncing of existing or new wave files easy.",
   "Category": "Animation",

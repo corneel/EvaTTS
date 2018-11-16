@@ -1,4 +1,4 @@
-// Some copyright should be here...
+// Copyright 2018 Augmented Enterprise, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
 

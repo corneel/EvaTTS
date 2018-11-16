@@ -11,7 +11,7 @@
 #include "Runtime/JsonUtilities/Public/JsonUtilities.h"
 #include "Runtime/JsonUtilities/Public/JsonObjectConverter.h"
 #include "Runtime/Json/Public/Dom/JsonObject.h"
-#include "SharedPointer.h"
+//#include "SharedPointer.h"
 
 /*************************************** Windows Stuff ***************************************************/
 
