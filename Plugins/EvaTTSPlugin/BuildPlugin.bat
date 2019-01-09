@@ -1,0 +1,1 @@
+"C:\Program Files\Epic Games\UE_4.21\Engine\Build\BatchFiles\RunUAT.bat" BuildPlugin -Plugin="C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\EvaTTSPlugin\EvaTTSPlugin.uplugin" -Targetplatforms=Win64 -Package="C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build"

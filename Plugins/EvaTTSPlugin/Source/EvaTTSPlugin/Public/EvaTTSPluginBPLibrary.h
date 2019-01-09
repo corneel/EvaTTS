@@ -15,8 +15,8 @@
 
 /*************************************** Windows Stuff ***************************************************/
 
-#include "AllowWindowsPlatformTypes.h"
-#include "AllowWindowsPlatformAtomics.h"
+#include "Runtime/Core/Public/Windows/AllowWindowsPlatformTypes.h"
+#include "Runtime/Core/Public/Windows/AllowWindowsPlatformAtomics.h"
 
 #pragma warning(push)
 #pragma warning(disable: 4191) // warning C4191: 'type cast' : unsafe conversion
@@ -46,7 +46,7 @@
 
 #pragma warning(pop)
 
-#include "HideWindowsPlatformTypes.h"
+#include "Runtime/Core/Public/Windows/HideWindowsPlatformTypes.h"
 
 /*************************************** Windows Stuff ***************************************************/
 

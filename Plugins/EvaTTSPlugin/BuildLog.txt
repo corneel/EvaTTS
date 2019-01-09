@@ -1,0 +1,60 @@
+
+C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\EvaTTSPlugin>BuildPlugin.bat
+
+C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\EvaTTSPlugin>"C:\Program Files\Epic Games\UE_4.21\Engine\Build\BatchFiles\RunUAT.bat" BuildPlugin -Plugin="C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\EvaTTSPlugin\EvaTTSPlugin.uplugin" -Targetplatforms=Win64 -Package="C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build"
+Running AutomationTool...
+Parsing command line: BuildPlugin -Plugin="C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\EvaTTSPlugin\EvaTTSPlugin.uplugin" -Targetplatforms=Win64 -Package="C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build"
+Copying 167 file(s) using max 64 thread(s)
+Reading plugin from C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\EvaTTSPlugin.uplugin...
+Building plugin for host platforms: Win64
+Running: C:\Program Files\Epic Games\UE_4.21\Engine\Binaries\DotNET\UnrealBuildTool.exe UE4Editor Win64 Development -plugin="C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\EvaTTSPlugin.uplugin" -iwyu -noubtmakefiles -manifest="C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Saved\Manifest-UE4Editor-Win64-Development.xml" -NoHotReload -log="C:\Program Files\Epic Games\UE_4.21\Engine\Programs\AutomationTool\Saved\Logs\UBT-UE4Editor-Win64-Development.txt"
+  Using Visual Studio 2017 14.15.26726 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Parsing headers for UE4Editor
+    Running UnrealHeaderTool UE4Editor "C:\Program Files\Epic Games\UE_4.21\Engine\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for UE4Editor in 12.8213726 seconds
+  Writing manifest to C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Saved\Manifest-UE4Editor-Win64-Development.xml
+  Building 5 actions with 8 processes...
+    [1/5] PCLaunch.rc
+    [2/5] Module.EvaTTSPlugin.gen.cpp
+    C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime/JsonUtilities/Public/JsonUtilities.h(6): warning: Monolithic headers should not be used by this module. Please change it to explicitly include the headers it needs.
+    [3/5] Module.EvaTTSPlugin.cpp
+    C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime/JsonUtilities/Public/JsonUtilities.h(6): warning: Monolithic headers should not be used by this module. Please change it to explicitly include the headers it needs.
+    [4/5] UE4Editor-EvaTTSPlugin.lib
+       Creating library C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\UE4Editor-EvaTTSPlugin.lib and object C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\UE4Editor-EvaTTSPlugin.exp
+    [5/5] UE4Editor-EvaTTSPlugin.dll
+       Creating library C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\UE4Editor-EvaTTSPlugin.suppressed.lib and object C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\UE4Editor-EvaTTSPlugin.suppressed.exp
+  Total build time: 25.37 seconds (Parallel executor: 5.80 seconds)
+Took 25.6096505s to run UnrealBuildTool.exe, ExitCode=0
+Building plugin for target platforms: Win64
+Running: C:\Program Files\Epic Games\UE_4.21\Engine\Binaries\DotNET\UnrealBuildTool.exe UE4Game Win64 Development -plugin="C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\EvaTTSPlugin.uplugin" -iwyu -noubtmakefiles -manifest="C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Saved\Manifest-UE4Game-Win64-Development.xml" -NoHotReload -ignorejunk -log="C:\Program Files\Epic Games\UE_4.21\Engine\Programs\AutomationTool\Saved\Logs\UBT-UE4Game-Win64-Development.txt"
+  Using Visual Studio 2017 14.15.26726 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Parsing headers for UE4Game
+    Running UnrealHeaderTool UE4Game "C:\Program Files\Epic Games\UE_4.21\Engine\Intermediate\Build\Win64\UE4\Development\UE4Game.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for UE4Game in 6.5502724 seconds
+  Writing manifest to C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Saved\Manifest-UE4Game-Win64-Development.xml
+  Building 2 actions with 8 processes...
+    [1/2] Module.EvaTTSPlugin.gen.cpp
+    C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime/JsonUtilities/Public/JsonUtilities.h(6): warning: Monolithic headers should not be used by this module. Please change it to explicitly include the headers it needs.
+    [2/2] Module.EvaTTSPlugin.cpp
+    C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime/JsonUtilities/Public/JsonUtilities.h(6): warning: Monolithic headers should not be used by this module. Please change it to explicitly include the headers it needs.
+    C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\Source\EvaTTSPlugin\Private\EvaTTSPluginBPLibrary.cpp(176): warning C4458: declaration of 'Name' hides class member
+    C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\Source\EvaTTSPlugin\Public\EvaTTSPluginBPLibrary.h(489): note: see declaration of 'UEvaTTSPluginBPLibrary::Name'
+  Total build time: 17.32 seconds (Parallel executor: 7.20 seconds)
+Took 17.5555828s to run UnrealBuildTool.exe, ExitCode=0
+Running: C:\Program Files\Epic Games\UE_4.21\Engine\Binaries\DotNET\UnrealBuildTool.exe UE4Game Win64 Shipping -plugin="C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\EvaTTSPlugin.uplugin" -iwyu -noubtmakefiles -manifest="C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Saved\Manifest-UE4Game-Win64-Shipping.xml" -NoHotReload -ignorejunk -log="C:\Program Files\Epic Games\UE_4.21\Engine\Programs\AutomationTool\Saved\Logs\UBT-UE4Game-Win64-Shipping.txt"
+  Using Visual Studio 2017 14.15.26726 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Writing manifest to C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Saved\Manifest-UE4Game-Win64-Shipping.xml
+  Building 2 actions with 8 processes...
+    [1/2] Module.EvaTTSPlugin.gen.cpp
+    C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime/JsonUtilities/Public/JsonUtilities.h(6): warning: Monolithic headers should not be used by this module. Please change it to explicitly include the headers it needs.
+    [2/2] Module.EvaTTSPlugin.cpp
+    C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime/JsonUtilities/Public/JsonUtilities.h(6): warning: Monolithic headers should not be used by this module. Please change it to explicitly include the headers it needs.
+    C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\Source\EvaTTSPlugin\Private\EvaTTSPluginBPLibrary.cpp(176): warning C4458: declaration of 'Name' hides class member
+    C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\Source\EvaTTSPlugin\Public\EvaTTSPluginBPLibrary.h(489): note: see declaration of 'UEvaTTSPluginBPLibrary::Name'
+  Total build time: 9.70 seconds (Parallel executor: 6.56 seconds)
+Took 9.9364811s to run UnrealBuildTool.exe, ExitCode=0
+Reading filter rules from C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\Build\HostProject\Plugins\EvaTTSPlugin\Config\FilterPlugin.ini
+BUILD SUCCESSFUL
+AutomationTool exiting with ExitCode=0 (Success)
+
+C:\Users\corne\Documents\Unreal Projects\Package\BuildPlugin\EvaTTSPlugin>

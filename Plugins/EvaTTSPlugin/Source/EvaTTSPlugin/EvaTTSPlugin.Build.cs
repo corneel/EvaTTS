@@ -10,7 +10,7 @@ public class EvaTTSPlugin : ModuleRules
 
         bEnableExceptions = true;
 
-        PublicIncludePaths.AddRange(new string[] { "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.15.26726/atlmfc/include" });
+        PublicIncludePaths.AddRange(new string[] { Target.WindowsPlatform.ToolChainDir + "/atlmfc/include" });
 				
 		
 		PrivateIncludePaths.AddRange(
@@ -52,7 +52,7 @@ public class EvaTTSPlugin : ModuleRules
 
         if (Target.Platform == UnrealTargetPlatform.Win64)
         {
-            PublicAdditionalLibraries.Add("C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.15.26726/atlmfc/lib/x64/atls.lib");
+            PublicAdditionalLibraries.Add(Target.WindowsPlatform.ToolChainDir + "/atlmfc/lib/x64/atls.lib");
         }
     }
 }
