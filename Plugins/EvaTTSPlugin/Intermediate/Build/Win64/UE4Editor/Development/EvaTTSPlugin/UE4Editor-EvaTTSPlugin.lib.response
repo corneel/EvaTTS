@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-EvaTTSPlugin.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Intermediate\Build\Win64\EvaTTSEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\Module.EvaTTSPlugin.cpp.obj"
+"C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\Module.EvaTTSPlugin.gen.cpp.obj"
+"C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\PCLaunch.rc.res"
+/OUT:"C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\UE4Editor-EvaTTSPlugin.lib"
