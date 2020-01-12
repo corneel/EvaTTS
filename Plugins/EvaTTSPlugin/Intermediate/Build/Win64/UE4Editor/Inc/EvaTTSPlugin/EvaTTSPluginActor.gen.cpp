@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -49,14 +49,18 @@ void EmptyLinkFunctionForGeneratedCodeEvaTTSPluginActor() {}
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AEvaTTSPluginActor_Statics::ClassParams = {
 		&AEvaTTSPluginActor::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		nullptr, 0,
-		nullptr,
+		"Engine",
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
-		METADATA_PARAMS(Z_Construct_UClass_AEvaTTSPluginActor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AEvaTTSPluginActor_Statics::Class_MetaDataParams))
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x009000A4u,
+		METADATA_PARAMS(Z_Construct_UClass_AEvaTTSPluginActor_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AEvaTTSPluginActor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AEvaTTSPluginActor()
 	{
@@ -67,7 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeEvaTTSPluginActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEvaTTSPluginActor, 595062153);
+	IMPLEMENT_CLASS(AEvaTTSPluginActor, 2523126095);
+	template<> EVATTSPLUGIN_API UClass* StaticClass<AEvaTTSPluginActor>()
+	{
+		return AEvaTTSPluginActor::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AEvaTTSPluginActor(Z_Construct_UClass_AEvaTTSPluginActor, &AEvaTTSPluginActor::StaticClass, TEXT("/Script/EvaTTSPlugin"), TEXT("AEvaTTSPluginActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AEvaTTSPluginActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

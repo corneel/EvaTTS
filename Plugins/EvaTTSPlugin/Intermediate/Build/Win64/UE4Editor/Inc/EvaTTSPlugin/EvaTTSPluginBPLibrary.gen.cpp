@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -79,13 +79,17 @@ void EmptyLinkFunctionForGeneratedCodeEvaTTSPluginBPLibrary() {}
 		}
 		return Singleton;
 	}
+	template<> EVATTSPLUGIN_API UEnum* StaticEnum<EJsonType>()
+	{
+		return EJsonType_StaticEnum();
+	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EJsonType(EJsonType_StaticEnum, TEXT("/Script/EvaTTSPlugin"), TEXT("EJsonType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_EvaTTSPlugin_EJsonType_CRC() { return 140821256U; }
+	uint32 Get_Z_Construct_UEnum_EvaTTSPlugin_EJsonType_Hash() { return 1575532782U; }
 	UEnum* Z_Construct_UEnum_EvaTTSPlugin_EJsonType()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_EvaTTSPlugin();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EJsonType"), 0, Get_Z_Construct_UEnum_EvaTTSPlugin_EJsonType_CRC(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EJsonType"), 0, Get_Z_Construct_UEnum_EvaTTSPlugin_EJsonType_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
@@ -103,28 +107,35 @@ void EmptyLinkFunctionForGeneratedCodeEvaTTSPluginBPLibrary() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "Array.DisplayName", "Array" },
+				{ "Array.Name", "EJsonType::Array" },
 				{ "BlueprintType", "true" },
 				{ "Boolean.DisplayName", "Boolean" },
+				{ "Boolean.Name", "EJsonType::Boolean" },
 				{ "Category", "TextToSpeech" },
 				{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 				{ "None.DisplayName", "None" },
+				{ "None.Name", "EJsonType::None" },
 				{ "Null.DisplayName", "Null" },
+				{ "Null.Name", "EJsonType::Null" },
 				{ "Number.DisplayName", "Number" },
+				{ "Number.Name", "EJsonType::Number" },
 				{ "Object.DisplayName", "Object" },
+				{ "Object.Name", "EJsonType::Object" },
 				{ "String.DisplayName", "String" },
+				{ "String.Name", "EJsonType::String" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_EvaTTSPlugin,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				"EJsonType",
-				RF_Public|RF_Transient|RF_MarkAsNative,
 				nullptr,
-				(uint8)UEnum::ECppForm::EnumClass,
+				"EJsonType",
 				"EJsonType",
 				Enumerators,
-				ARRAY_COUNT(Enumerators),
-				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+				UE_ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
 		}
@@ -135,10 +146,14 @@ class UScriptStruct* FSoundIndexArrayStruct::StaticStruct()
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern EVATTSPLUGIN_API uint32 Get_Z_Construct_UScriptStruct_FSoundIndexArrayStruct_CRC();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSoundIndexArrayStruct, Z_Construct_UPackage__Script_EvaTTSPlugin(), TEXT("SoundIndexArrayStruct"), sizeof(FSoundIndexArrayStruct), Get_Z_Construct_UScriptStruct_FSoundIndexArrayStruct_CRC());
+		extern EVATTSPLUGIN_API uint32 Get_Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FSoundIndexArrayStruct, Z_Construct_UPackage__Script_EvaTTSPlugin(), TEXT("SoundIndexArrayStruct"), sizeof(FSoundIndexArrayStruct), Get_Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Hash());
 	}
 	return Singleton;
+}
+template<> EVATTSPLUGIN_API UScriptStruct* StaticStruct<FSoundIndexArrayStruct>()
+{
+	return FSoundIndexArrayStruct::StaticStruct();
 }
 static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FSoundIndexArrayStruct(FSoundIndexArrayStruct::StaticStruct, TEXT("/Script/EvaTTSPlugin"), TEXT("SoundIndexArrayStruct"), false, nullptr, nullptr);
 static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArrayStruct
@@ -181,14 +196,14 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Str, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(FSoundIndexArrayStruct, Name), METADATA_PARAMS(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Name_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Name_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSoundIndexArrayStruct, Name), METADATA_PARAMS(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Name_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Name_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Age_MetaData[] = {
 		{ "Category", "Student" },
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Age = { UE4CodeGen_Private::EPropertyClass::Int, "Age", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000004, 1, nullptr, STRUCT_OFFSET(FSoundIndexArrayStruct, Age), METADATA_PARAMS(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Age_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Age_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Age = { "Age", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FSoundIndexArrayStruct, Age), METADATA_PARAMS(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Age_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Age_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Name,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::NewProp_Age,
@@ -198,19 +213,20 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		nullptr,
 		&NewStructOps,
 		"SoundIndexArrayStruct",
-		RF_Public|RF_Transient|RF_MarkAsNative,
-		EStructFlags(0x00000001),
 		sizeof(FSoundIndexArrayStruct),
 		alignof(FSoundIndexArrayStruct),
-		Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::PropPointers),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::Struct_MetaDataParams))
+		Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FSoundIndexArrayStruct()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FSoundIndexArrayStruct_CRC();
+		extern uint32 Get_Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_EvaTTSPlugin();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SoundIndexArrayStruct"), sizeof(FSoundIndexArrayStruct), Get_Z_Construct_UScriptStruct_FSoundIndexArrayStruct_CRC(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("SoundIndexArrayStruct"), sizeof(FSoundIndexArrayStruct), Get_Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
@@ -220,7 +236,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FSoundIndexArrayStruct_CRC() { return 244587791U; }
+	uint32 Get_Z_Construct_UScriptStruct_FSoundIndexArrayStruct_Hash() { return 436046708U; }
 	void UJSONValue::StaticRegisterNativesUJSONValue()
 	{
 	}
@@ -253,14 +269,18 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UJSONValue_Statics::ClassParams = {
 		&UJSONValue::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
-		METADATA_PARAMS(Z_Construct_UClass_UJSONValue_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UJSONValue_Statics::Class_MetaDataParams))
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UJSONValue_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UJSONValue_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UJSONValue()
 	{
@@ -271,7 +291,11 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UJSONValue, 821104051);
+	IMPLEMENT_CLASS(UJSONValue, 2892611681);
+	template<> EVATTSPLUGIN_API UClass* StaticClass<UJSONValue>()
+	{
+		return UJSONValue::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UJSONValue(Z_Construct_UClass_UJSONValue, &UJSONValue::StaticClass, TEXT("/Script/EvaTTSPlugin"), TEXT("UJSONValue"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UJSONValue);
 	void UJSONHandle::StaticRegisterNativesUJSONHandle()
@@ -306,14 +330,18 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UJSONHandle_Statics::ClassParams = {
 		&UJSONHandle::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
-		METADATA_PARAMS(Z_Construct_UClass_UJSONHandle_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UJSONHandle_Statics::Class_MetaDataParams))
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UJSONHandle_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UJSONHandle_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UJSONHandle()
 	{
@@ -324,7 +352,11 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UJSONHandle, 274871062);
+	IMPLEMENT_CLASS(UJSONHandle, 3114346393);
+	template<> EVATTSPLUGIN_API UClass* StaticClass<UJSONHandle>()
+	{
+		return UJSONHandle::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UJSONHandle(Z_Construct_UClass_UJSONHandle, &UJSONHandle::StaticClass, TEXT("/Script/EvaTTSPlugin"), TEXT("UJSONHandle"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UJSONHandle);
 	void UJSONHandleArray::StaticRegisterNativesUJSONHandleArray()
@@ -359,14 +391,18 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UJSONHandleArray_Statics::ClassParams = {
 		&UJSONHandleArray::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
-		METADATA_PARAMS(Z_Construct_UClass_UJSONHandleArray_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UJSONHandleArray_Statics::Class_MetaDataParams))
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UJSONHandleArray_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UJSONHandleArray_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UJSONHandleArray()
 	{
@@ -377,7 +413,11 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UJSONHandleArray, 809742653);
+	IMPLEMENT_CLASS(UJSONHandleArray, 3110982219);
+	template<> EVATTSPLUGIN_API UClass* StaticClass<UJSONHandleArray>()
+	{
+		return UJSONHandleArray::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UJSONHandleArray(Z_Construct_UClass_UJSONHandleArray, &UJSONHandleArray::StaticClass, TEXT("/Script/EvaTTSPlugin"), TEXT("UJSONHandleArray"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UJSONHandleArray);
 	void UJSONStructArray::StaticRegisterNativesUJSONStructArray()
@@ -412,14 +452,18 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UJSONStructArray_Statics::ClassParams = {
 		&UJSONStructArray::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		nullptr, 0,
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
-		METADATA_PARAMS(Z_Construct_UClass_UJSONStructArray_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UJSONStructArray_Statics::Class_MetaDataParams))
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x000000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UJSONStructArray_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UJSONStructArray_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UJSONStructArray()
 	{
@@ -430,7 +474,11 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UJSONStructArray, 141738909);
+	IMPLEMENT_CLASS(UJSONStructArray, 2617444547);
+	template<> EVATTSPLUGIN_API UClass* StaticClass<UJSONStructArray>()
+	{
+		return UJSONStructArray::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UJSONStructArray(Z_Construct_UClass_UJSONStructArray, &UJSONStructArray::StaticClass, TEXT("/Script/EvaTTSPlugin"), TEXT("UJSONStructArray"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UJSONStructArray);
 	void UEvaTTSPluginBPLibrary::StaticRegisterNativesUEvaTTSPluginBPLibrary()
@@ -479,7 +527,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 			{ "TTSSpeak", &UEvaTTSPluginBPLibrary::execTTSSpeak },
 			{ "TTSSpeakStream", &UEvaTTSPluginBPLibrary::execTTSSpeakStream },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics
 	{
@@ -498,9 +546,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Object, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONArrayToArray_Parms, Value), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Str, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONArrayToArray_Parms, Name), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::NewProp_JSONHandleArray = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandleArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONArrayToArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONArrayToArray_Parms, Value), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONArrayToArray_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::NewProp_JSONHandleArray = { "JSONHandleArray", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONArrayToArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::NewProp_Value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::NewProp_Name,
@@ -514,7 +562,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "AddJSONArrayToArray", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventAddJSONArrayToArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "AddJSONArrayToArray", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventAddJSONArrayToArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -541,9 +589,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Object, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONArrayToObject_Parms, Value), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Str, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONArrayToObject_Parms, Name), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::NewProp_JSONHandle = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONArrayToObject_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONArrayToObject_Parms, Value), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONArrayToObject_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::NewProp_JSONHandle = { "JSONHandle", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONArrayToObject_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::NewProp_Value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::NewProp_Name,
@@ -557,7 +605,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "AddJSONArrayToObject", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventAddJSONArrayToObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "AddJSONArrayToObject", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventAddJSONArrayToObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -584,9 +632,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Str, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONElement_Parms, Value), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Str, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONElement_Parms, Name), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::NewProp_JSONHandle = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONElement_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONElement_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONElement_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::NewProp_JSONHandle = { "JSONHandle", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONElement_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::NewProp_Value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::NewProp_Name,
@@ -600,7 +648,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "AddJSONElement", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventAddJSONElement_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "AddJSONElement", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventAddJSONElement_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -627,9 +675,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Float, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONNumericElement_Parms, Value), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Str, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONNumericElement_Parms, Name), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::NewProp_JSONHandle = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONNumericElement_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONNumericElement_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONNumericElement_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::NewProp_JSONHandle = { "JSONHandle", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONNumericElement_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::NewProp_Value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::NewProp_Name,
@@ -643,7 +691,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "AddJSONNumericElement", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventAddJSONNumericElement_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "AddJSONNumericElement", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventAddJSONNumericElement_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -670,9 +718,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Object, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONObject_Parms, Value), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Str, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONObject_Parms, Name), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::NewProp_JSONHandle = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONObject_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONObject_Parms, Value), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONObject_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::NewProp_JSONHandle = { "JSONHandle", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONObject_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::NewProp_Value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::NewProp_Name,
@@ -686,7 +734,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "AddJSONObject", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventAddJSONObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "AddJSONObject", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventAddJSONObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -711,8 +759,8 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Object, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONObjectToArray_Parms, Value), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::NewProp_JSONHandleArray = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandleArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONObjectToArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONObjectToArray_Parms, Value), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::NewProp_JSONHandleArray = { "JSONHandleArray", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventAddJSONObjectToArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::NewProp_Value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::NewProp_JSONHandleArray,
@@ -725,7 +773,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "AddJSONObjectToArray", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventAddJSONObjectToArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "AddJSONObjectToArray", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventAddJSONObjectToArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -754,10 +802,10 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromArray_Parms, ReturnValue), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::NewProp_ElementCount = { UE4CodeGen_Private::EPropertyClass::Int, "ElementCount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromArray_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::NewProp_Index = { UE4CodeGen_Private::EPropertyClass::Int, "Index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromArray_Parms, Index), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::NewProp_JSONHandleArray = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandleArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromArray_Parms, ReturnValue), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::NewProp_ElementCount = { "ElementCount", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromArray_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromArray_Parms, Index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::NewProp_JSONHandleArray = { "JSONHandleArray", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::NewProp_ElementCount,
@@ -772,7 +820,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "GetJSONArrayFromArray", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventGetJSONArrayFromArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "GetJSONArrayFromArray", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventGetJSONArrayFromArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -801,10 +849,10 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromObject_Parms, ReturnValue), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::NewProp_ElementCount = { UE4CodeGen_Private::EPropertyClass::Int, "ElementCount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromObject_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Str, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromObject_Parms, Name), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::NewProp_JSONHandle = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromObject_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromObject_Parms, ReturnValue), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::NewProp_ElementCount = { "ElementCount", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromObject_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromObject_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::NewProp_JSONHandle = { "JSONHandle", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayFromObject_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::NewProp_ElementCount,
@@ -819,7 +867,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "GetJSONArrayFromObject", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventGetJSONArrayFromObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "GetJSONArrayFromObject", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventGetJSONArrayFromObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -847,10 +895,10 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::NewProp_ElementCount = { UE4CodeGen_Private::EPropertyClass::Int, "ElementCount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayHandleAsArray_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::NewProp_JSONValueArray = { UE4CodeGen_Private::EPropertyClass::Array, "JSONValueArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayHandleAsArray_Parms, JSONValueArray), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::NewProp_JSONValueArray_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "JSONValueArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::NewProp_JSONHandleArray = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandleArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayHandleAsArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::NewProp_ElementCount = { "ElementCount", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayHandleAsArray_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::NewProp_JSONValueArray = { "JSONValueArray", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayHandleAsArray_Parms, JSONValueArray), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::NewProp_JSONValueArray_Inner = { "JSONValueArray", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::NewProp_JSONHandleArray = { "JSONHandleArray", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayHandleAsArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::NewProp_ElementCount,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::NewProp_JSONValueArray,
@@ -865,7 +913,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "GetJSONArrayHandleAsArray", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventGetJSONArrayHandleAsArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "GetJSONArrayHandleAsArray", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventGetJSONArrayHandleAsArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -895,12 +943,12 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_ElementCount = { UE4CodeGen_Private::EPropertyClass::Int, "ElementCount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayTypesAndValues_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_TypesAndValues = { UE4CodeGen_Private::EPropertyClass::Map, "TypesAndValues", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayTypesAndValues_Parms, TypesAndValues), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_TypesAndValues_Key_KeyProp = { UE4CodeGen_Private::EPropertyClass::Enum, "TypesAndValues_Key", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, Z_Construct_UEnum_EvaTTSPlugin_EJsonType, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_TypesAndValues_Key_KeyProp_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_TypesAndValues_ValueProp = { UE4CodeGen_Private::EPropertyClass::Object, "TypesAndValues", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 1, Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_JSONHandleArray = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandleArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayTypesAndValues_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_ElementCount = { "ElementCount", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayTypesAndValues_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_TypesAndValues = { "TypesAndValues", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayTypesAndValues_Parms, TypesAndValues), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_TypesAndValues_Key_KeyProp = { "TypesAndValues_Key", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UEnum_EvaTTSPlugin_EJsonType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_TypesAndValues_Key_KeyProp_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_TypesAndValues_ValueProp = { "TypesAndValues", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_JSONHandleArray = { "JSONHandleArray", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONArrayTypesAndValues_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_ElementCount,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::NewProp_TypesAndValues,
@@ -917,7 +965,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "GetJSONArrayTypesAndValues", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventGetJSONArrayTypesAndValues_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "GetJSONArrayTypesAndValues", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventGetJSONArrayTypesAndValues_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -944,9 +992,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Str, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElement_Parms, Value), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Str, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElement_Parms, Name), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::NewProp_JSONHandle = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElement_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElement_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElement_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::NewProp_JSONHandle = { "JSONHandle", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElement_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::NewProp_Value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::NewProp_Name,
@@ -960,7 +1008,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "GetJSONElement", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventGetJSONElement_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "GetJSONElement", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventGetJSONElement_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -989,10 +1037,10 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Str, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElementMultiple_Parms, Value), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Str, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElementMultiple_Parms, Name), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::NewProp_Index = { UE4CodeGen_Private::EPropertyClass::Int, "Index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElementMultiple_Parms, Index), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::NewProp_JSONHandleArray = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandleArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElementMultiple_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElementMultiple_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElementMultiple_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElementMultiple_Parms, Index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::NewProp_JSONHandleArray = { "JSONHandleArray", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONElementMultiple_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::NewProp_Value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::NewProp_Name,
@@ -1007,7 +1055,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "GetJSONElementMultiple", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventGetJSONElementMultiple_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "GetJSONElementMultiple", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventGetJSONElementMultiple_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1034,9 +1082,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Float, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONNumericElement_Parms, Value), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Str, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONNumericElement_Parms, Name), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::NewProp_JSONHandle = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONNumericElement_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONNumericElement_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONNumericElement_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::NewProp_JSONHandle = { "JSONHandle", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONNumericElement_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::NewProp_Value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::NewProp_Name,
@@ -1050,7 +1098,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "GetJSONNumericElement", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventGetJSONNumericElement_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "GetJSONNumericElement", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventGetJSONNumericElement_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1077,9 +1125,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObject_Parms, ReturnValue), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Str, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObject_Parms, Name), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::NewProp_JSONHandle = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObject_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObject_Parms, ReturnValue), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObject_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::NewProp_JSONHandle = { "JSONHandle", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObject_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::NewProp_Name,
@@ -1093,7 +1141,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "GetJSONObject", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventGetJSONObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "GetJSONObject", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventGetJSONObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1123,14 +1171,14 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectFromArray_Parms, ReturnValue), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectFromArray_Parms, ReturnValue), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_Success_SetBit(void* Obj)
 	{
 		((EvaTTSPluginBPLibrary_eventGetJSONObjectFromArray_Parms*)Obj)->Success = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_Success = { UE4CodeGen_Private::EPropertyClass::Bool, "Success", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventGetJSONObjectFromArray_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_Index = { UE4CodeGen_Private::EPropertyClass::Int, "Index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectFromArray_Parms, Index), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_JSONHandleArray = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandleArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectFromArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventGetJSONObjectFromArray_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectFromArray_Parms, Index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_JSONHandleArray = { "JSONHandleArray", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectFromArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::NewProp_Success,
@@ -1145,7 +1193,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "GetJSONObjectFromArray", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventGetJSONObjectFromArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "GetJSONObjectFromArray", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventGetJSONObjectFromArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1175,12 +1223,12 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_ElementCount = { UE4CodeGen_Private::EPropertyClass::Int, "ElementCount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectKeysAndTypes_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_KeysAndTypes = { UE4CodeGen_Private::EPropertyClass::Map, "KeysAndTypes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectKeysAndTypes_Parms, KeysAndTypes), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_KeysAndTypes_Key_KeyProp = { UE4CodeGen_Private::EPropertyClass::Str, "KeysAndTypes_Key", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_KeysAndTypes_ValueProp = { UE4CodeGen_Private::EPropertyClass::Enum, "KeysAndTypes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 1, Z_Construct_UEnum_EvaTTSPlugin_EJsonType, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_KeysAndTypes_ValueProp_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_JSONHandle = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectKeysAndTypes_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_ElementCount = { "ElementCount", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectKeysAndTypes_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_KeysAndTypes = { "KeysAndTypes", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectKeysAndTypes_Parms, KeysAndTypes), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_KeysAndTypes_Key_KeyProp = { "KeysAndTypes_Key", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_KeysAndTypes_ValueProp = { "KeysAndTypes", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UEnum_EvaTTSPlugin_EJsonType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_KeysAndTypes_ValueProp_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_JSONHandle = { "JSONHandle", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectKeysAndTypes_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_ElementCount,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::NewProp_KeysAndTypes,
@@ -1197,7 +1245,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "GetJSONObjectKeysAndTypes", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventGetJSONObjectKeysAndTypes_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "GetJSONObjectKeysAndTypes", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventGetJSONObjectKeysAndTypes_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1225,10 +1273,10 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::NewProp_JsonType = { UE4CodeGen_Private::EPropertyClass::Enum, "JsonType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectType_Parms, JsonType), Z_Construct_UEnum_EvaTTSPlugin_EJsonType, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::NewProp_JsonType_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::NewProp_Index = { UE4CodeGen_Private::EPropertyClass::Int, "Index", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectType_Parms, Index), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::NewProp_JSONHandleArray = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandleArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectType_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::NewProp_JsonType = { "JsonType", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectType_Parms, JsonType), Z_Construct_UEnum_EvaTTSPlugin_EJsonType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::NewProp_JsonType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectType_Parms, Index), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::NewProp_JSONHandleArray = { "JSONHandleArray", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONObjectType_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::NewProp_JsonType,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::NewProp_JsonType_Underlying,
@@ -1243,7 +1291,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "GetJSONObjectType", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventGetJSONObjectType_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "GetJSONObjectType", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventGetJSONObjectType_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1269,9 +1317,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::NewProp_JsonType = { UE4CodeGen_Private::EPropertyClass::Enum, "JsonType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONValueType_Parms, JsonType), Z_Construct_UEnum_EvaTTSPlugin_EJsonType, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::NewProp_JsonType_Underlying = { UE4CodeGen_Private::EPropertyClass::Byte, "UnderlyingType", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::NewProp_JSONValue = { UE4CodeGen_Private::EPropertyClass::Object, "JSONValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONValueType_Parms, JSONValue), Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::NewProp_JsonType = { "JsonType", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONValueType_Parms, JsonType), Z_Construct_UEnum_EvaTTSPlugin_EJsonType, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::NewProp_JsonType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::NewProp_JSONValue = { "JSONValue", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventGetJSONValueType_Parms, JSONValue), Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::NewProp_JsonType,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::NewProp_JsonType_Underlying,
@@ -1285,7 +1333,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "GetJSONValueType", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventGetJSONValueType_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "GetJSONValueType", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventGetJSONValueType_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1317,9 +1365,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventJSONArrayToFile_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventJSONArrayToFile_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::NewProp_FileName = { UE4CodeGen_Private::EPropertyClass::Str, "FileName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONArrayToFile_Parms, FileName), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::NewProp_JSONHandleArray = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandleArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONArrayToFile_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventJSONArrayToFile_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::NewProp_FileName = { "FileName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONArrayToFile_Parms, FileName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::NewProp_JSONHandleArray = { "JSONHandleArray", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONArrayToFile_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::NewProp_FileName,
@@ -1333,7 +1381,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "JSONArrayToFile", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventJSONArrayToFile_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "JSONArrayToFile", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventJSONArrayToFile_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1361,13 +1409,13 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONParseStringToObject_Parms, ReturnValue), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONParseStringToObject_Parms, ReturnValue), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::NewProp_Success_SetBit(void* Obj)
 	{
 		((EvaTTSPluginBPLibrary_eventJSONParseStringToObject_Parms*)Obj)->Success = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::NewProp_Success = { UE4CodeGen_Private::EPropertyClass::Bool, "Success", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventJSONParseStringToObject_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::NewProp_JSONString = { UE4CodeGen_Private::EPropertyClass::Str, "JSONString", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONParseStringToObject_Parms, JSONString), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventJSONParseStringToObject_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::NewProp_JSONString = { "JSONString", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONParseStringToObject_Parms, JSONString), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::NewProp_Success,
@@ -1381,7 +1429,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "JSONParseStringToObject", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventJSONParseStringToObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "JSONParseStringToObject", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventJSONParseStringToObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1409,13 +1457,13 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONParseStringToValue_Parms, ReturnValue), Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONParseStringToValue_Parms, ReturnValue), Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::NewProp_Success_SetBit(void* Obj)
 	{
 		((EvaTTSPluginBPLibrary_eventJSONParseStringToValue_Parms*)Obj)->Success = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::NewProp_Success = { UE4CodeGen_Private::EPropertyClass::Bool, "Success", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventJSONParseStringToValue_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::NewProp_JSONString = { UE4CodeGen_Private::EPropertyClass::Str, "JSONString", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONParseStringToValue_Parms, JSONString), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventJSONParseStringToValue_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::NewProp_JSONString = { "JSONString", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONParseStringToValue_Parms, JSONString), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::NewProp_Success,
@@ -1429,7 +1477,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "JSONParseStringToValue", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventJSONParseStringToValue_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "JSONParseStringToValue", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventJSONParseStringToValue_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1454,8 +1502,8 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONValueAsArray_Parms, ReturnValue), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::NewProp_JSONValue = { UE4CodeGen_Private::EPropertyClass::Object, "JSONValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONValueAsArray_Parms, JSONValue), Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONValueAsArray_Parms, ReturnValue), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::NewProp_JSONValue = { "JSONValue", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONValueAsArray_Parms, JSONValue), Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::NewProp_JSONValue,
@@ -1468,7 +1516,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "JSONValueAsArray", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventJSONValueAsArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "JSONValueAsArray", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventJSONValueAsArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1493,8 +1541,8 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONValueAsObject_Parms, ReturnValue), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::NewProp_JSONValue = { UE4CodeGen_Private::EPropertyClass::Object, "JSONValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONValueAsObject_Parms, JSONValue), Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONValueAsObject_Parms, ReturnValue), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::NewProp_JSONValue = { "JSONValue", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventJSONValueAsObject_Parms, JSONValue), Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::NewProp_JSONValue,
@@ -1507,7 +1555,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "JSONValueAsObject", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventJSONValueAsObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "JSONValueAsObject", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventJSONValueAsObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1530,20 +1578,21 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventNewJSONObject_Parms, ReturnValue), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventNewJSONObject_Parms, ReturnValue), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::Function_MetaDataParams[] = {
 		{ "Category", "TextToSpeech" },
+		{ "Comment", "/**************************************JSON Methods**************************************/" },
 		{ "DisplayName", "NewJSONObject" },
 		{ "Keywords", "TextToSpeech New JSON Object" },
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 		{ "ToolTip", "***********************************JSON Methods*************************************" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "NewJSONObject", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventNewJSONObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "NewJSONObject", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventNewJSONObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1566,7 +1615,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventNewJSONObjectArray_Parms, ReturnValue), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventNewJSONObjectArray_Parms, ReturnValue), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::NewProp_ReturnValue,
 	};
@@ -1578,7 +1627,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "NewJSONObjectArray", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventNewJSONObjectArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "NewJSONObjectArray", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventNewJSONObjectArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1601,7 +1650,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventNewJSONValue_Parms, ReturnValue), Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventNewJSONValue_Parms, ReturnValue), Z_Construct_UClass_UJSONValue_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::NewProp_ReturnValue,
 	};
@@ -1613,7 +1662,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "NewJSONValue", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventNewJSONValue_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "NewJSONValue", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventNewJSONValue_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1643,14 +1692,14 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventParseFile_Parms, ReturnValue), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventParseFile_Parms, ReturnValue), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_Success_SetBit(void* Obj)
 	{
 		((EvaTTSPluginBPLibrary_eventParseFile_Parms*)Obj)->Success = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_Success = { UE4CodeGen_Private::EPropertyClass::Bool, "Success", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventParseFile_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_ElementCount = { UE4CodeGen_Private::EPropertyClass::Int, "ElementCount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventParseFile_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_FileName = { UE4CodeGen_Private::EPropertyClass::Str, "FileName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventParseFile_Parms, FileName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventParseFile_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_ElementCount = { "ElementCount", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventParseFile_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_FileName = { "FileName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventParseFile_Parms, FileName), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::NewProp_Success,
@@ -1665,7 +1714,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "ParseFile", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventParseFile_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "ParseFile", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventParseFile_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1695,14 +1744,14 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Object, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventParseMultiple_Parms, ReturnValue), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventParseMultiple_Parms, ReturnValue), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_Success_SetBit(void* Obj)
 	{
 		((EvaTTSPluginBPLibrary_eventParseMultiple_Parms*)Obj)->Success = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_Success = { UE4CodeGen_Private::EPropertyClass::Bool, "Success", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventParseMultiple_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_ElementCount = { UE4CodeGen_Private::EPropertyClass::Int, "ElementCount", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventParseMultiple_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_JSONString = { UE4CodeGen_Private::EPropertyClass::Str, "JSONString", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventParseMultiple_Parms, JSONString), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventParseMultiple_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_ElementCount = { "ElementCount", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventParseMultiple_Parms, ElementCount), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_JSONString = { "JSONString", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventParseMultiple_Parms, JSONString), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::NewProp_Success,
@@ -1717,7 +1766,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "ParseMultiple", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventParseMultiple_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "ParseMultiple", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventParseMultiple_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1740,7 +1789,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::NewProp_JSONHandleArray = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandleArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventPrintJSONArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::NewProp_JSONHandleArray = { "JSONHandleArray", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventPrintJSONArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::NewProp_JSONHandleArray,
 	};
@@ -1752,7 +1801,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "PrintJSONArray", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04022401, sizeof(EvaTTSPluginBPLibrary_eventPrintJSONArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "PrintJSONArray", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventPrintJSONArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1784,9 +1833,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventSerializeJSONObject_Parms*)Obj)->Success = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::NewProp_Success = { UE4CodeGen_Private::EPropertyClass::Bool, "Success", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventSerializeJSONObject_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Str, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventSerializeJSONObject_Parms, Value), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::NewProp_JSONHandle = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandle", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventSerializeJSONObject_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventSerializeJSONObject_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventSerializeJSONObject_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::NewProp_JSONHandle = { "JSONHandle", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventSerializeJSONObject_Parms, JSONHandle), Z_Construct_UClass_UJSONHandle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::NewProp_Success,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::NewProp_Value,
@@ -1800,7 +1849,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "SerializeJSONObject", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventSerializeJSONObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "SerializeJSONObject", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventSerializeJSONObject_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1832,9 +1881,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventSerializeJSONObjectArray_Parms*)Obj)->Success = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::NewProp_Success = { UE4CodeGen_Private::EPropertyClass::Bool, "Success", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventSerializeJSONObjectArray_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Str, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventSerializeJSONObjectArray_Parms, Value), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::NewProp_JSONHandleArray = { UE4CodeGen_Private::EPropertyClass::Object, "JSONHandleArray", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventSerializeJSONObjectArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventSerializeJSONObjectArray_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::NewProp_Success_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventSerializeJSONObjectArray_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::NewProp_JSONHandleArray = { "JSONHandleArray", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventSerializeJSONObjectArray_Parms, JSONHandleArray), Z_Construct_UClass_UJSONHandleArray_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::NewProp_Success,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::NewProp_Value,
@@ -1848,7 +1897,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "SerializeJSONObjectArray", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04422401, sizeof(EvaTTSPluginBPLibrary_eventSerializeJSONObjectArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "SerializeJSONObjectArray", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventSerializeJSONObjectArray_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1882,11 +1931,11 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventTTSGetEvents_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventTTSGetEvents_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_TTSPhonemesDurations = { UE4CodeGen_Private::EPropertyClass::Array, "TTSPhonemesDurations", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSGetEvents_Parms, TTSPhonemesDurations), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_TTSPhonemesDurations_Inner = { UE4CodeGen_Private::EPropertyClass::Int, "TTSPhonemesDurations", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_TTSPhonemesIndexes = { UE4CodeGen_Private::EPropertyClass::Array, "TTSPhonemesIndexes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSGetEvents_Parms, TTSPhonemesIndexes), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_TTSPhonemesIndexes_Inner = { UE4CodeGen_Private::EPropertyClass::Int, "TTSPhonemesIndexes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventTTSGetEvents_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_TTSPhonemesDurations = { "TTSPhonemesDurations", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSGetEvents_Parms, TTSPhonemesDurations), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_TTSPhonemesDurations_Inner = { "TTSPhonemesDurations", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_TTSPhonemesIndexes = { "TTSPhonemesIndexes", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSGetEvents_Parms, TTSPhonemesIndexes), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_TTSPhonemesIndexes_Inner = { "TTSPhonemesIndexes", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::NewProp_TTSPhonemesDurations,
@@ -1902,7 +1951,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "TTSGetEvents", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(EvaTTSPluginBPLibrary_eventTTSGetEvents_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "TTSGetEvents", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventTTSGetEvents_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1933,9 +1982,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventTTSListVoices_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventTTSListVoices_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::NewProp_Voices = { UE4CodeGen_Private::EPropertyClass::Array, "Voices", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000180, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSListVoices_Parms, Voices), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::NewProp_Voices_Inner = { UE4CodeGen_Private::EPropertyClass::Str, "Voices", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0000000000000000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventTTSListVoices_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::NewProp_Voices = { "Voices", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSListVoices_Parms, Voices), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::NewProp_Voices_Inner = { "Voices", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::NewProp_Voices,
@@ -1949,7 +1998,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "TTSListVoices", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04420401, sizeof(EvaTTSPluginBPLibrary_eventTTSListVoices_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "TTSListVoices", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventTTSListVoices_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1977,7 +2026,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventTTSPause_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventTTSPause_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventTTSPause_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::NewProp_ReturnValue,
 	};
@@ -1989,7 +2038,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "TTSPause", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(EvaTTSPluginBPLibrary_eventTTSPause_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "TTSPause", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventTTSPause_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2019,8 +2068,8 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventTTSPausibleSpeak_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventTTSPausibleSpeak_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Str, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSPausibleSpeak_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventTTSPausibleSpeak_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSPausibleSpeak_Parms, Value), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::NewProp_Value,
@@ -2033,7 +2082,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "TTSPausibleSpeak", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(EvaTTSPluginBPLibrary_eventTTSPausibleSpeak_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "TTSPausibleSpeak", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventTTSPausibleSpeak_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2061,7 +2110,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventTTSResume_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventTTSResume_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventTTSResume_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::NewProp_ReturnValue,
 	};
@@ -2073,7 +2122,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "TTSResume", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(EvaTTSPluginBPLibrary_eventTTSResume_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "TTSResume", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventTTSResume_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2105,9 +2154,9 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventTTSSaveFile_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventTTSSaveFile_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::NewProp_Text = { UE4CodeGen_Private::EPropertyClass::Str, "Text", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSSaveFile_Parms, Text), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::NewProp_FileName = { UE4CodeGen_Private::EPropertyClass::Str, "FileName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSSaveFile_Parms, FileName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventTTSSaveFile_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSSaveFile_Parms, Text), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::NewProp_FileName = { "FileName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSSaveFile_Parms, FileName), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::NewProp_Text,
@@ -2121,7 +2170,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "TTSSaveFile", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(EvaTTSPluginBPLibrary_eventTTSSaveFile_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "TTSSaveFile", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventTTSSaveFile_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2151,8 +2200,8 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventTTSSetVoice_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventTTSSetVoice_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::NewProp_Name = { UE4CodeGen_Private::EPropertyClass::Str, "Name", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSSetVoice_Parms, Name), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventTTSSetVoice_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSSetVoice_Parms, Name), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::NewProp_Name,
@@ -2160,13 +2209,14 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::Function_MetaDataParams[] = {
 		{ "Category", "TextToSpeech" },
+		{ "Comment", "/*************************************************** SAPI TTS Methods *************************************************/" },
 		{ "DisplayName", "TTSSetVoice" },
 		{ "Keywords", "Set Voice TTS" },
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 		{ "ToolTip", "************************************************ SAPI TTS Methods ************************************************" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "TTSSetVoice", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(EvaTTSPluginBPLibrary_eventTTSSetVoice_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "TTSSetVoice", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventTTSSetVoice_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2196,8 +2246,8 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventTTSSetVolume_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventTTSSetVolume_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::NewProp_Volume = { UE4CodeGen_Private::EPropertyClass::Int, "Volume", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSSetVolume_Parms, Volume), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventTTSSetVolume_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::NewProp_Volume = { "Volume", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSSetVolume_Parms, Volume), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::NewProp_Volume,
@@ -2210,7 +2260,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "TTSSetVolume", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(EvaTTSPluginBPLibrary_eventTTSSetVolume_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "TTSSetVolume", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventTTSSetVolume_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2243,13 +2293,13 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventTTSSpeak_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventTTSSpeak_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventTTSSpeak_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_PreparePhonemes_SetBit(void* Obj)
 	{
 		((EvaTTSPluginBPLibrary_eventTTSSpeak_Parms*)Obj)->PreparePhonemes = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_PreparePhonemes = { UE4CodeGen_Private::EPropertyClass::Bool, "PreparePhonemes", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventTTSSpeak_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_PreparePhonemes_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Str, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSSpeak_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_PreparePhonemes = { "PreparePhonemes", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventTTSSpeak_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_PreparePhonemes_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSSpeak_Parms, Value), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::NewProp_PreparePhonemes,
@@ -2264,7 +2314,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "TTSSpeak", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(EvaTTSPluginBPLibrary_eventTTSSpeak_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "TTSSpeak", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventTTSSpeak_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2294,8 +2344,8 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	{
 		((EvaTTSPluginBPLibrary_eventTTSSpeakStream_Parms*)Obj)->ReturnValue = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::NewProp_ReturnValue = { UE4CodeGen_Private::EPropertyClass::Bool, "ReturnValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000580, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(EvaTTSPluginBPLibrary_eventTTSSpeakStream_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::NewProp_Value = { UE4CodeGen_Private::EPropertyClass::Str, "Value", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSSpeakStream_Parms, Value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(EvaTTSPluginBPLibrary_eventTTSSpeakStream_Parms), &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EvaTTSPluginBPLibrary_eventTTSSpeakStream_Parms, Value), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::NewProp_Value,
@@ -2308,7 +2358,7 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		{ "ModuleRelativePath", "Public/EvaTTSPluginBPLibrary.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, "TTSSpeakStream", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, sizeof(EvaTTSPluginBPLibrary_eventTTSSpeakStream_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEvaTTSPluginBPLibrary, nullptr, "TTSSpeakStream", nullptr, nullptr, sizeof(EvaTTSPluginBPLibrary_eventTTSSpeakStream_Parms), Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2337,47 +2387,47 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		(UObject* (*)())Z_Construct_UPackage__Script_EvaTTSPlugin,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UEvaTTSPluginBPLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray, "AddJSONArrayToArray" }, // 2897466854
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject, "AddJSONArrayToObject" }, // 4192052490
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement, "AddJSONElement" }, // 2469776693
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement, "AddJSONNumericElement" }, // 485658871
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject, "AddJSONObject" }, // 647310420
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray, "AddJSONObjectToArray" }, // 4142366015
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray, "GetJSONArrayFromArray" }, // 1868780830
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject, "GetJSONArrayFromObject" }, // 1754808364
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray, "GetJSONArrayHandleAsArray" }, // 3375953235
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues, "GetJSONArrayTypesAndValues" }, // 2487569586
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement, "GetJSONElement" }, // 2085262352
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple, "GetJSONElementMultiple" }, // 3396502445
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement, "GetJSONNumericElement" }, // 4224764215
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject, "GetJSONObject" }, // 1868478151
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray, "GetJSONObjectFromArray" }, // 3900225397
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes, "GetJSONObjectKeysAndTypes" }, // 282320831
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType, "GetJSONObjectType" }, // 3654274410
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType, "GetJSONValueType" }, // 4137641529
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile, "JSONArrayToFile" }, // 1127293337
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject, "JSONParseStringToObject" }, // 1483975528
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue, "JSONParseStringToValue" }, // 2235646793
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray, "JSONValueAsArray" }, // 3258774502
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject, "JSONValueAsObject" }, // 162390881
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject, "NewJSONObject" }, // 3967307988
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray, "NewJSONObjectArray" }, // 2712772002
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue, "NewJSONValue" }, // 1792248031
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile, "ParseFile" }, // 212747235
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple, "ParseMultiple" }, // 851555563
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray, "PrintJSONArray" }, // 1271901311
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject, "SerializeJSONObject" }, // 4041003276
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray, "SerializeJSONObjectArray" }, // 1291589756
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents, "TTSGetEvents" }, // 516546235
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices, "TTSListVoices" }, // 4288891440
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause, "TTSPause" }, // 453703051
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak, "TTSPausibleSpeak" }, // 4112913209
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume, "TTSResume" }, // 2715670595
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile, "TTSSaveFile" }, // 3266935384
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice, "TTSSetVoice" }, // 4081724352
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume, "TTSSetVolume" }, // 79092264
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak, "TTSSpeak" }, // 2576931042
-		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream, "TTSSpeakStream" }, // 2436337654
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToArray, "AddJSONArrayToArray" }, // 3441133173
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONArrayToObject, "AddJSONArrayToObject" }, // 2462901567
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONElement, "AddJSONElement" }, // 1444377294
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONNumericElement, "AddJSONNumericElement" }, // 1367499481
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObject, "AddJSONObject" }, // 1366903529
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_AddJSONObjectToArray, "AddJSONObjectToArray" }, // 1334813110
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromArray, "GetJSONArrayFromArray" }, // 2184245174
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayFromObject, "GetJSONArrayFromObject" }, // 3526590700
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayHandleAsArray, "GetJSONArrayHandleAsArray" }, // 3676070914
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONArrayTypesAndValues, "GetJSONArrayTypesAndValues" }, // 118240779
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElement, "GetJSONElement" }, // 559411963
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONElementMultiple, "GetJSONElementMultiple" }, // 2510131719
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONNumericElement, "GetJSONNumericElement" }, // 157118784
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObject, "GetJSONObject" }, // 2797484404
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectFromArray, "GetJSONObjectFromArray" }, // 1079782657
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectKeysAndTypes, "GetJSONObjectKeysAndTypes" }, // 1131885735
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONObjectType, "GetJSONObjectType" }, // 3712614032
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_GetJSONValueType, "GetJSONValueType" }, // 2543554038
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONArrayToFile, "JSONArrayToFile" }, // 1574022179
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToObject, "JSONParseStringToObject" }, // 4214723478
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONParseStringToValue, "JSONParseStringToValue" }, // 3773525171
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsArray, "JSONValueAsArray" }, // 732520097
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_JSONValueAsObject, "JSONValueAsObject" }, // 3945274034
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObject, "NewJSONObject" }, // 2686003225
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONObjectArray, "NewJSONObjectArray" }, // 3137825559
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_NewJSONValue, "NewJSONValue" }, // 384436768
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseFile, "ParseFile" }, // 4246676409
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_ParseMultiple, "ParseMultiple" }, // 4184714572
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_PrintJSONArray, "PrintJSONArray" }, // 965191700
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObject, "SerializeJSONObject" }, // 2583588904
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_SerializeJSONObjectArray, "SerializeJSONObjectArray" }, // 1377869339
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSGetEvents, "TTSGetEvents" }, // 1119971585
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSListVoices, "TTSListVoices" }, // 668976371
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPause, "TTSPause" }, // 2333157508
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSPausibleSpeak, "TTSPausibleSpeak" }, // 3825913094
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSResume, "TTSResume" }, // 2314700131
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSaveFile, "TTSSaveFile" }, // 1770984294
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVoice, "TTSSetVoice" }, // 1996835274
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSetVolume, "TTSSetVolume" }, // 2032889203
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeak, "TTSSpeak" }, // 3246180519
+		{ &Z_Construct_UFunction_UEvaTTSPluginBPLibrary_TTSSpeakStream, "TTSSpeakStream" }, // 4073923715
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEvaTTSPluginBPLibrary_Statics::Class_MetaDataParams[] = {
@@ -2392,14 +2442,18 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 	};
 	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UEvaTTSPluginBPLibrary_Statics::ClassParams = {
 		&UEvaTTSPluginBPLibrary::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x000000A0u,
-		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
-		METADATA_PARAMS(Z_Construct_UClass_UEvaTTSPluginBPLibrary_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UEvaTTSPluginBPLibrary_Statics::Class_MetaDataParams))
+		DependentSingletons,
+		FuncInfo,
+		nullptr,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		0,
+		0,
+		0x000000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UEvaTTSPluginBPLibrary_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UEvaTTSPluginBPLibrary_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UEvaTTSPluginBPLibrary()
 	{
@@ -2410,7 +2464,11 @@ static struct FScriptStruct_EvaTTSPlugin_StaticRegisterNativesFSoundIndexArraySt
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEvaTTSPluginBPLibrary, 62098210);
+	IMPLEMENT_CLASS(UEvaTTSPluginBPLibrary, 1993213259);
+	template<> EVATTSPLUGIN_API UClass* StaticClass<UEvaTTSPluginBPLibrary>()
+	{
+		return UEvaTTSPluginBPLibrary::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UEvaTTSPluginBPLibrary(Z_Construct_UClass_UEvaTTSPluginBPLibrary, &UEvaTTSPluginBPLibrary::StaticClass, TEXT("/Script/EvaTTSPlugin"), TEXT("UEvaTTSPluginBPLibrary"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UEvaTTSPluginBPLibrary);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

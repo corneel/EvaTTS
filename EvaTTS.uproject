@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.21",
+	"EngineAssociation": "4.24",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -20,10 +20,6 @@
 		},
 		{
 			"Name": "SoundUtilities",
-			"Enabled": true
-		},
-		{
-			"Name": "ActorSequenceEditor",
 			"Enabled": true
 		}
 	],

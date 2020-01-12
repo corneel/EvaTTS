@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -13,6 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define EVATTSPLUGIN_EvaTTSPluginActor_generated_h
 
+#define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_SPARSE_DATA
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_RPC_WRAPPERS
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_INCLASS_NO_PURE_DECLS \
@@ -20,7 +21,7 @@ private: \
 	static void StaticRegisterNativesAEvaTTSPluginActor(); \
 	friend struct Z_Construct_UClass_AEvaTTSPluginActor_Statics; \
 public: \
-	DECLARE_CLASS(AEvaTTSPluginActor, AActor, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/EvaTTSPlugin"), NO_API) \
+	DECLARE_CLASS(AEvaTTSPluginActor, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/EvaTTSPlugin"), NO_API) \
 	DECLARE_SERIALIZER(AEvaTTSPluginActor)
 
 
@@ -29,7 +30,7 @@ private: \
 	static void StaticRegisterNativesAEvaTTSPluginActor(); \
 	friend struct Z_Construct_UClass_AEvaTTSPluginActor_Statics; \
 public: \
-	DECLARE_CLASS(AEvaTTSPluginActor, AActor, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/EvaTTSPlugin"), NO_API) \
+	DECLARE_CLASS(AEvaTTSPluginActor, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/EvaTTSPlugin"), NO_API) \
 	DECLARE_SERIALIZER(AEvaTTSPluginActor)
 
 
@@ -63,6 +64,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEvaTTSPluginActor); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_RPC_WRAPPERS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_INCLASS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_STANDARD_CONSTRUCTORS \
@@ -74,12 +76,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_INCLASS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> EVATTSPLUGIN_API UClass* StaticClass<class AEvaTTSPluginActor>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActor_h

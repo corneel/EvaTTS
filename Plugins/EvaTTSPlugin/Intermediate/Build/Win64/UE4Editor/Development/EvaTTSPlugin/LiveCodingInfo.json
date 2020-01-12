@@ -1,0 +1,17 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.EvaTTSPlugin.cpp.obj": [
+			"EvaTTSPlugin.cpp.obj",
+			"EvaTTSPluginActor.cpp.obj",
+			"EvaTTSPluginActorComponent.cpp.obj",
+			"EvaTTSPluginBPLibrary.cpp.obj"
+		],
+		"Module.EvaTTSPlugin.gen.cpp.obj": [
+			"EvaTTSPlugin.init.gen.cpp.obj",
+			"EvaTTSPluginActor.gen.cpp.obj",
+			"EvaTTSPluginActorComponent.gen.cpp.obj",
+			"EvaTTSPluginBPLibrary.gen.cpp.obj"
+		]
+	}
+}

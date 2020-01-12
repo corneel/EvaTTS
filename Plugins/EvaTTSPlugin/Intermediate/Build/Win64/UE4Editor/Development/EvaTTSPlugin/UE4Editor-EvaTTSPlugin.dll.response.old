@@ -6,7 +6,7 @@
 /SUBSYSTEM:WINDOWS
 /FIXED:No
 /NXCOMPAT
-/STACK:12000000
+/STACK:5000000
 /DELAY:UNLOAD
 /DLL
 /PDBALTPATH:%_PDB%
@@ -16,9 +16,8 @@
 /ignore:4199
 /ignore:4099
 /DELAYLOAD:"d3d12.dll"
-/DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\lib\x64"
-/LIBPATH:"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\lib\um\x64"
+/LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\lib\um\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.16299.0\ucrt\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.16299.0\um\x64"
 /NODEFAULTLIB:"LIBCMT"
@@ -31,11 +30,10 @@
 /NODEFAULTLIB:"LIBCP"
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
-/FUNCTIONPADMIN
 "C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Intermediate\Build\Win64\EvaTTSEditor\Development\Engine\SharedPCH.Engine.h.obj"
 "C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\Module.EvaTTSPlugin.cpp.obj"
 "C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\Module.EvaTTSPlugin.gen.cpp.obj"
-"C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\Default.rc2.res"
+"C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\PCLaunch.rc.res"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
@@ -60,16 +58,15 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314/atlmfc/lib/x64/atls.lib"
-"C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
-"C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
-"C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\Slate\UE4Editor-Slate.lib"
-"C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\SlateCore\UE4Editor-SlateCore.lib"
-"C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\Json\UE4Editor-Json.lib"
-"C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\JsonUtilities\UE4Editor-JsonUtilities.lib"
-"C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023/atlmfc/lib/x64/atls.lib"
+"C:\Program Files\Epic Games\UE_4.21\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
+"C:\Program Files\Epic Games\UE_4.21\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
+"C:\Program Files\Epic Games\UE_4.21\Engine\Intermediate\Build\Win64\UE4Editor\Development\Slate\UE4Editor-Slate.lib"
+"C:\Program Files\Epic Games\UE_4.21\Engine\Intermediate\Build\Win64\UE4Editor\Development\SlateCore\UE4Editor-SlateCore.lib"
+"C:\Program Files\Epic Games\UE_4.21\Engine\Intermediate\Build\Win64\UE4Editor\Development\Json\UE4Editor-Json.lib"
+"C:\Program Files\Epic Games\UE_4.21\Engine\Intermediate\Build\Win64\UE4Editor\Development\JsonUtilities\UE4Editor-JsonUtilities.lib"
+"C:\Program Files\Epic Games\UE_4.21\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
 /OUT:"C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Plugins\EvaTTSPlugin\Binaries\Win64\UE4Editor-EvaTTSPlugin.dll"
 /IMPLIB:"C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Plugins\EvaTTSPlugin\Intermediate\Build\Win64\UE4Editor\Development\EvaTTSPlugin\UE4Editor-EvaTTSPlugin.suppressed.lib"
 /PDB:"C:\Users\corne\Documents\Unreal Projects\EvaTTS-Code\Plugins\EvaTTSPlugin\Binaries\Win64\UE4Editor-EvaTTSPlugin.pdb"
 /ignore:4078
-/INCLUDE:IMPLEMENT_MODULE_EvaTTSPlugin

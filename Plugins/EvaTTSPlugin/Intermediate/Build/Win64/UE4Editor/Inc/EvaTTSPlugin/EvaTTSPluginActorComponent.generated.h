@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -14,6 +14,7 @@ class UObject;
 #endif
 #define EVATTSPLUGIN_EvaTTSPluginActorComponent_generated_h
 
+#define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h_13_SPARSE_DATA
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h_13_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execMakeObject) \
@@ -88,6 +89,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UEvaTTSPluginActorComponent); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h_13_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h_13_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h_13_RPC_WRAPPERS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h_13_INCLASS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h_13_STANDARD_CONSTRUCTORS \
@@ -99,12 +101,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h_13_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h_13_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h_13_INCLASS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> EVATTSPLUGIN_API UClass* StaticClass<class UEvaTTSPluginActorComponent>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginActorComponent_h

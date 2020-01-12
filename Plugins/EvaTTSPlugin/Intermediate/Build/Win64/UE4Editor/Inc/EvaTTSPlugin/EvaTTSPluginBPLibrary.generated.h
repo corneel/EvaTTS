@@ -1,4 +1,4 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -24,6 +24,9 @@ enum class EJsonType : uint8;
 	EVATTSPLUGIN_API static class UScriptStruct* StaticStruct();
 
 
+template<> EVATTSPLUGIN_API UScriptStruct* StaticStruct<struct FSoundIndexArrayStruct>();
+
+#define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_SPARSE_DATA
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_RPC_WRAPPERS
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_RPC_WRAPPERS_NO_PURE_DECLS
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_INCLASS_NO_PURE_DECLS \
@@ -76,6 +79,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UJSONValue); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_RPC_WRAPPERS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_INCLASS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_STANDARD_CONSTRUCTORS \
@@ -87,6 +91,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_INCLASS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_73_ENHANCED_CONSTRUCTORS \
@@ -94,6 +99,9 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> EVATTSPLUGIN_API UClass* StaticClass<class UJSONValue>();
+
+#define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_SPARSE_DATA
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_RPC_WRAPPERS
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_RPC_WRAPPERS_NO_PURE_DECLS
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_INCLASS_NO_PURE_DECLS \
@@ -146,6 +154,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UJSONHandle); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_RPC_WRAPPERS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_INCLASS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_STANDARD_CONSTRUCTORS \
@@ -157,6 +166,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_RPC_WRAPPERS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_INCLASS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_81_ENHANCED_CONSTRUCTORS \
@@ -164,6 +174,9 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> EVATTSPLUGIN_API UClass* StaticClass<class UJSONHandle>();
+
+#define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_SPARSE_DATA
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_RPC_WRAPPERS
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_RPC_WRAPPERS_NO_PURE_DECLS
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_INCLASS_NO_PURE_DECLS \
@@ -216,6 +229,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UJSONHandleArray); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_RPC_WRAPPERS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_INCLASS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_STANDARD_CONSTRUCTORS \
@@ -227,6 +241,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_RPC_WRAPPERS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_INCLASS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_89_ENHANCED_CONSTRUCTORS \
@@ -234,6 +249,9 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> EVATTSPLUGIN_API UClass* StaticClass<class UJSONHandleArray>();
+
+#define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_SPARSE_DATA
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_RPC_WRAPPERS
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_RPC_WRAPPERS_NO_PURE_DECLS
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_INCLASS_NO_PURE_DECLS \
@@ -286,6 +304,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UJSONStructArray); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_RPC_WRAPPERS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_INCLASS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_STANDARD_CONSTRUCTORS \
@@ -297,6 +316,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_RPC_WRAPPERS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_INCLASS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_106_ENHANCED_CONSTRUCTORS \
@@ -304,6 +324,9 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> EVATTSPLUGIN_API UClass* StaticClass<class UJSONStructArray>();
+
+#define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_115_SPARSE_DATA
 #define EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_115_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetJSONArrayTypesAndValues) \
@@ -1182,6 +1205,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UEvaTTSPluginBPLibrary); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_115_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_115_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_115_RPC_WRAPPERS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_115_INCLASS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_115_STANDARD_CONSTRUCTORS \
@@ -1193,12 +1217,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_115_PRIVATE_PROPERTY_OFFSET \
+	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_115_SPARSE_DATA \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_115_RPC_WRAPPERS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_115_INCLASS_NO_PURE_DECLS \
 	EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h_115_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class EvaTTSPluginBPLibrary."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> EVATTSPLUGIN_API UClass* StaticClass<class UEvaTTSPluginBPLibrary>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID EvaTTS_Code_Plugins_EvaTTSPlugin_Source_EvaTTSPlugin_Public_EvaTTSPluginBPLibrary_h
@@ -1212,4 +1239,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EJsonType::Boolean) \
 	op(EJsonType::Array) \
 	op(EJsonType::Object) 
+
+enum class EJsonType : uint8;
+template<> EVATTSPLUGIN_API UEnum* StaticEnum<EJsonType>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
